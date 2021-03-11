@@ -1,1 +1,5 @@
-# blog.begin.com
+# Begin blog
+
+The official Begin blog
+
+
