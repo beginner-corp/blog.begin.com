@@ -18,7 +18,14 @@ let BlogRoll = [ {
 
 
   module.exports = {
-    RecentPosts,
+    "Recent Posts": [ {
+      'Get started': [
+        'Why Architect?',
+        'Quickstart',
+        'Project layout',
+        'Detailed AWS setup',
+      ],
+    } ],
     BlogRoll
   }
   

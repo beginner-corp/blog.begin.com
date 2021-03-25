@@ -6,6 +6,7 @@ folder public
 fingerprint true
 
 @http
+get /
 get /posts/:title
 get /*
 
