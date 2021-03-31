@@ -72,7 +72,7 @@ function Heading3 (state = {}) {
 >
   ${children}
 </h3>
-<hr class="border-solid border1 border-p1 mb1">
+<hr class="border-solid border1 border-g10 mb1">
   `
 }
 

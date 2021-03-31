@@ -1,10 +1,14 @@
 /* ----- THEME ----- */
 /* VARIABLES */
 :root {
-    --p0:#2CDD93;/* clover green */
-    --p1:#2B7D9A;/* blue green */
-    --p2:#BBFFAA;/* key lime */
-    --p3:#E21893;/* Barbie Pink light */
+    --p0:transparent; /* transparent */
+    --p1:#ffffff;/* white */
+    --p2:#ebebeb;/* white-1 */
+    --p3:#0057b8;/* ocean-blue */
+    --p4:#a8a8a8;/* greyish */
+    --p5:#002d4d;/* begin blue */
+    --p6:#ffc245;/* butterscotch */
+    --p7:#ff455a;/* watermelon */
     --g0:#FBFBFB;/* #FBFBFB */
     --g1:#E5E5E5;/* #E5E5E5 */
     --g2:#CFCFCF;/* #CFCFCF */
@@ -150,7 +154,7 @@
   .bg-d1:disabled{background-color:var(--d1);}
   
   
-    /* GRADIENT */.bg-image0{background-image:linear-gradient(0.4turn, var(--p1), var(--p0));}
+    /* GRADIENT */.bg-image0{background-image:linear-gradient(0.4turn, var(--p6), var(--p7));}
   
   
   /* BORDER */

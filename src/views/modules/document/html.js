@@ -56,7 +56,7 @@ ${Symbols}
         items-center
         justify-between
         top0
-        bg-g9
+        bg-p5
         col-start-1
         col-end-3
         text-g0

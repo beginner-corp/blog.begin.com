@@ -2,12 +2,12 @@ export default `
 /* ----- THEME ----- */
 /* VARIABLES */
 :root {
-  --p0:#2CDD93;/* Medium Aquamarine light */
-  --p1:#1F74D6;/* Bright Navy Blue light */
-  --p2:hsl(267, 50%, 55%);/* Royal Purple light */
-  --p3:#E21893;/* Barbie Pink light */
-  --p4:#FF6263;/* Bittersweet Orange light */
-  --p5:hsl(267, 75%, 45%);/* Royal purple */
+  --p0:transparent; /* transparent */
+  --p1:#ffffff;/* white */
+  --p2:#ebebeb;/* white-1 */
+  --p3:#0057b8;/* ocean-blue */
+  --p4:#a8a8a8;/* greyish */
+  --p5:#002d4d;/* begin blue */
   --g0:#FBFBFB;/* #FBFBFB */
   --g1:#E5E5E5;/* #E5E5E5 */
   --g2:#CFCFCF;/* #CFCFCF */
@@ -20,7 +20,7 @@ export default `
   --g9:#383838;/* #383838 */
   --g10:#222222;/* #222222 */
   --h0:#3EE09C;/* Medium Aquamarine */
-  --h1:#2a80e0;/* Bright Navy Blue */
+  --h1:#0094ff;/* azure */
   --h2:hsl(267, 90%, 55%);/* Royal Purple Hover */
   --h3:#DE1792;/* Barbie Pink */
   --h4:#FF4747;/* Bittersweet Orange */
@@ -67,11 +67,11 @@ body {
 .text-current{color:currentColor;}/* current color */
 .text-transparent{color:transparent;}/* transparent */
 .text-p0{color:var(--p0);}/* Medium Aquamarine light */
-.text-p1{color:var(--p1);}/* Bright Navy Blue light */
-.text-p2{color:var(--p2);}/* Royal Purple light */
-.text-p3{color:var(--p3);}/* Barbie Pink light */
-.text-p4{color:var(--p4);}/* Bittersweet Orange light */
-.text-p5{color:var(--p5);}/* Royal purple */
+.text-p1{color:var(--p1);}/* white */
+.text-p2{color:var(--p2);}/* white-1 */
+.text-p3{color:var(--p3);}/* ocean-blue */
+.text-p4{color:var(--p4);}/* greyish */
+.text-p5{color:var(--p5);}/* begin blue */
 .text-g0{color:var(--g0);}/* #FBFBFB */
 .text-g1{color:var(--g1);}/* #E5E5E5 */
 .text-g2{color:var(--g2);}/* #CFCFCF */
@@ -151,7 +151,7 @@ body {
 .bg-d1:disabled{background-color:var(--d1);}
 
 
-  /* GRADIENT */.bg-image0{background-image:linear-gradient(0.4turn, #0100ca, #00e5ff, #f50057);}/* outrun */
+  /* GRADIENT */.bg-image0{background-image:linear-gradient(0.4turn, #ffc245, #d6004b, #f50057);}/* outrun */
 
 
 /* BORDER */
