@@ -1,12 +1,11 @@
+let fs = require('fs')
 require = require('esm')(module) // eslint-disable-line
 
 const Html = require('@architect/views/modules/document/html.js').default
-const toc = require('@architect/views/posts/table-of-contents')
+const posts = fs.readdirSync(path.join('node_modules', '@architect', 'views', 'posts'))
 
 exports.handler = async function index(req) {
   let title = "Begin Blog"
-  // console.log(toc.posts)
-
   
   return {
     statusCode: 200,
@@ -16,7 +15,7 @@ exports.handler = async function index(req) {
     },
     body: Html({
       title,
-      toc,
+      posts,
     })
   }
 }

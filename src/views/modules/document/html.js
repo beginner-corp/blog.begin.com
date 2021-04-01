@@ -7,7 +7,7 @@ import Icon from '../components/icon.js'
 // import Sidebar from '../components/sidebar.js'
 import GithubLink from '../components/github-link.js'
 import SlackLink from '../components/slack-link.js'
-import BlogCard from '../components/blogCard.js'
+import BlogCard from '../components/blog-card.js'
 
 
 export default function HTML (props = {}) {
@@ -16,8 +16,10 @@ export default function HTML (props = {}) {
     scripts = '',
     state = {},
     thirdparty = '',
-    title = ''
+    title = '',
+    posts = []
   } = props
+
   let scriptTags = scripts &&
     Array.isArray(props.scripts)
     ? scripts.map(src => Script({ src })).join('')
