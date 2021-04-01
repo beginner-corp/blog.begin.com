@@ -1,6 +1,5 @@
 import listFromObject from '../helpers/list.js'
 import slugify from '../helpers/slugify.js'
-import toc from '../../posts/table-of-contents'
 
 const map = {
   list: function List (state = {}) {
@@ -139,7 +138,7 @@ export default function BlogCard (props = {}) {
     bg-g0
   "
 >
-  ${listFromObject({ data: toc, map, path: [ 'posts' ], active })}
+  <ul>${ props.posts.map(p=> `<li><a href=/posts/${p}>${p}</a>`).join('') }</ul>
 </aside>
   `
 }
