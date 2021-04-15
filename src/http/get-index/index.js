@@ -4,6 +4,7 @@ require = require('esm')(module) // eslint-disable-line
 const Html = require('@architect/views/modules/document/html.js').default
 const posts = fs.readdirSync(path.join('node_modules', '@architect', 'views', 'posts'))
 
+console.log("Index: ", posts)
 exports.handler = async function index(req) {
   let title = "Begin Blog"
   
