@@ -127,7 +127,7 @@ ${Symbols}
             text2
           "
         >
-          ${title}
+
         </h1>
         ${BlogCard(props)}
         

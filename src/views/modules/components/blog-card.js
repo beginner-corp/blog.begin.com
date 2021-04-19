@@ -6,7 +6,7 @@ export default function BlogCard (props = {}) {
   return `
   <div class="postsGrid">${ props.posts.map(post => `
     <div class="postCard">
-      <a href=/posts/${post}>${post}</a>
+      <a href=/posts/${post.replace(".md", "")}>${post}</a>
     </div>`).join('')}
   </div>
   `

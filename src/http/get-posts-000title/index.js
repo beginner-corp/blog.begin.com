@@ -2,28 +2,30 @@ require = require('esm')(module) // eslint-disable-line
 const path = require('path')
 const util = require('util')
 const fs = require('fs')
-// const Markdown = require('markdown-it')
-// const markdownClass = require('@toycode/markdown-it-class')
-// const markdownAnchor = require('markdown-it-anchor')
-// const frontmatterParser = require('markdown-it-front-matter')
-// const classMapping = require('./markdown-class-mappings')
-// const hljs = require('highlight.js')
-// const { escapeHtml } = Markdown().utils
-// const highlight = require('./highlighter')
-//   .bind(null, hljs, escapeHtml)
-// const arcGrammar = require('./arc-grammar')
-// hljs.registerLanguage('arc', arcGrammar)
+const Markdown = require('markdown-it')
+const markdownClass = require('@toycode/markdown-it-class')
+const markdownAnchor = require('markdown-it-anchor')
+const frontmatterParser = require('markdown-it-front-matter')
+const classMapping = require('./markdown-class-mappings')
+const hljs = require('highlight.js')
+const { escapeHtml } = Markdown().utils
+const highlight = require('./highlighter')
+  .bind(null, hljs, escapeHtml)
+const arcGrammar = require('./arc-grammar')
+hljs.registerLanguage('arc', arcGrammar)
 const readFile = util.promisify(fs.readFile)
 const Html = require('@architect/views/modules/document/html.js').default
 const yaml = require('js-yaml')
 const EDIT_DOCS = `edit/main/src/views/docs/`
 const cache = {} // cheap warm cache
+const arc = require('@architect/functions')
+
 
 exports.handler = async function http (req) {
 
   let docName = req.pathParameters.title
  
-  let doc = `${docName}.md`
+  let doc = `${docName}`
 
   let activePath = path.join(
     'posts',
@@ -38,7 +40,7 @@ exports.handler = async function http (req) {
     '@architect',
     'views',
     'posts',
-    doc
+    `${doc}.md`
   )
 
   let file
@@ -56,43 +58,37 @@ exports.handler = async function http (req) {
     }
   }
   
-  // // Declare in outer scope for use later... sorry
-  // let frontmatter = ''
-  // const md = Markdown({
-  //   highlight,
-  //   linkify: true,
-  //   html: true,
-  //   typography: true
-  // })
-  //   .use(markdownClass, classMapping)
-  //   .use(markdownAnchor, {
-  //     permalinkSymbol: ' '
-  //   })
-  //   .use(frontmatterParser, function (str) {
-  //     frontmatter = yaml.load(str)
-  //   })
-  // const children = md.render(file)
-  // const { category, description, sections, title } = frontmatter
+  // Declare in outer scope for use later... sorry
+  let frontmatter = ''
+  // let image = `<img src="${arc.static('')}">`
+  const md = Markdown({
+    highlight,
+    linkify: true,
+    html: true,
+    typography: true
+  })
+    .use(markdownClass, classMapping)
+    .use(markdownAnchor, {
+      permalinkSymbol: ' '
+    })
+    .use(frontmatterParser, function (str) {
+      frontmatter = yaml.load(str)
+    })
+  const children = md.render(file)
+  const { category, description, title, image } = frontmatter
 
+  // 👆 copy into index with dependencies to style frontmatter blogcards
   return {
     statusCode: 200,
     headers: {
       'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0',
       'content-type': 'text/html; charset=utf8'
     },
-    body: Html({
-      active,
-      // category,
-      // children,
-      // description,
-      // sections,
-      scripts: [
-        '/index.js',
-        '/components/arc-viewer.js',
-        '/components/arc-tab.js'
-      ],
-      title,
-      toc
-    })
+    body: `
+    ${title}
+    ${image}
+    ${children}
+    ${description}
+    `
   }
 }
