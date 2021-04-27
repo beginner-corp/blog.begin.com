@@ -1,5 +1,8 @@
-export default function Main (/* props = {} */) {
+
+export default function Main (props = {}) {
+  
+  let children = props.children || ""
   return `
-    <div>Welcome!</div>
+    <div>${children}</div>
   `
 }

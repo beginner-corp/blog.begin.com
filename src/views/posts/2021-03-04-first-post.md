@@ -5,7 +5,7 @@ category: uncategorized
 description: Architect is an open source project and we want YOUR help!
 ---
 
-## This is the first post
+## This is the first post (Sub-Header(H2)) 
 
 **The standard Lorem Ipsum passage, used since the 1500s**
 

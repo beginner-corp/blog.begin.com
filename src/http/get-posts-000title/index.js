@@ -85,7 +85,7 @@ exports.handler = async function http (req) {
     },
     body: `
     ${`<img height="400" src=${arc.static(image)}>`}
-    ${description}
+    ${`<blockquote>${description}</blockquote>`}
     ${`<h1>${title}</h1>`}
     ${children}
     `

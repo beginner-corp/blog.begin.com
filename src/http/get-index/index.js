@@ -1,5 +1,6 @@
 let fs = require('fs')
 require = require('esm')(module) // eslint-disable-line
+const main =require('@architect/views/modules/pages/main.js').default
 
 const Html = require('@architect/views/modules/document/html.js').default
 const posts = fs.readdirSync(path.join('node_modules', '@architect', 'views', 'posts'))
@@ -8,7 +9,7 @@ const posts = fs.readdirSync(path.join('node_modules', '@architect', 'views', 'p
 // console.log("Index: ", posts)
 exports.handler = async function index(req) {
  
-  
+  // let children = main({children: 'Shawn'})
   return {
     statusCode: 200,
     headers: {
@@ -16,7 +17,7 @@ exports.handler = async function index(req) {
       'content-type': 'text/html; charset=utf8'
     },
     body: Html({
-      posts
+      children: main({children: 'Shawn'})
     })
   }
 }
