@@ -19,7 +19,12 @@ exports.handler = async function index(req) {
     </div>`).join('')}
   </div>
   `
-  
+  let headline = `
+  <div class="mb3 text-center">
+    <h1 class="font-black text4">The Beginners Blog</h1>
+    <h2>Back to the basics</h2>
+  </div>
+  `
 
   return {
     statusCode: 200,
@@ -28,7 +33,11 @@ exports.handler = async function index(req) {
       'content-type': 'text/html; charset=utf8'
     },
     body: Html({
-      children: main({children: blogCard})
+      children: main({children: `
+        ${headline}
+        ${blogCard}
+      `
+      })
     })
   }
 }
