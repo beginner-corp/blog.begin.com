@@ -1,6 +1,6 @@
 ---
 title: Post 2
-image: 'image.png' 
+image: 'image-2.png' 
 category: uncategorized
 description: Architect is an open source project and we want YOUR help!
 ---

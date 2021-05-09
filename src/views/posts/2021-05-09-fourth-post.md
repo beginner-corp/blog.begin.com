@@ -1,14 +1,13 @@
 ---
-title: Post 1
-image: 'image.png' 
+title: Post 4
+image: 'image.png'
 category: uncategorized
 description: Architect is an open source project and we want YOUR help!
-url: 'post'
 ---
 
-# First post
+# Fourth post
 
-## This is the first post (Sub-Header(H2)) 
+## This is the fourth post (Sub-Header(H2)) 
 
 **The standard Lorem Ipsum passage, used since the 1500s**
 

@@ -25,7 +25,8 @@ const arc = require('@architect/functions')
 const base = path.join('node_modules', '@architect', 'views', 'posts')
 const posts = fs.readdirSync(base)
 
-const meta = (function readFrontMatter() {
+
+const createCard = (function readFrontMatter() {
     let results = [];
 
     for(let post of posts) {
@@ -45,27 +46,19 @@ const meta = (function readFrontMatter() {
             frontmatter = yaml.load(str)
           })
         const children = md.render(raw)
-        results.push(frontmatter)
-
+        results.push({post, frontmatter})
     }
     return results
-   
 })()
-
 
 exports.handler = async function index(req) {
 
-  console.log('meta: ', meta.title)
-
-  // <a href=/posts/${post.replace(".md", "")}>${`<p>${meta.map(met => `<p>${met.title}</p>`).join('')}</p>`}</a>
- 
   let blogCard = `
-  <div class="postsGrid">${meta.map(met => `
-    <div class="postCard">
-      <img src=${met.image} alt="postIMG" height="100"/>
-     
-      <p>${met.title}</p>
-      <p>${met.description}</p>
+  <div class="postsGrid">${createCard.map(card => `
+  <div class="postCard">
+  <img src=${card.frontmatter.image} alt="postIMG" height="100"/>
+      <h2><a href=/posts/${card.post.replace(".md", "")}>${card.frontmatter.title}</a></h2>
+      <p>${card.frontmatter.description}</p>
     </div>`).join('')}
   </div>
   `

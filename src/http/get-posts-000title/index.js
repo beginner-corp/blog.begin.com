@@ -24,7 +24,7 @@ const arc = require('@architect/functions')
 
 
 exports.handler = async function http (req) {
-console.log(req)
+
   let docName = req.pathParameters.title
  
   let doc = `${docName}`
@@ -78,8 +78,6 @@ console.log(req)
   const children = md.render(file)
   const { category, description, title, image } = frontmatter
 
-  console.log(frontmatter)
-  console.log(title)
   // 👆 copy into index with dependencies to style frontmatter blogcards
   return {
     statusCode: 200,
