@@ -78,19 +78,13 @@ exports.handler = async function http (req) {
   const children = md.render(file)
   const { category, description, title, image } = frontmatter
 
-  // 👆 copy into index with dependencies to style frontmatter blogcards
   return {
     statusCode: 200,
     headers: {
       'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0',
       'content-type': 'text/html; charset=utf8'
     },
-    body: Html({children: main({children}),
-    category,
-    description,
-    title,
-    image,
-    frontmatter
+    body: Html({children: main({children})
     }),
     
   }

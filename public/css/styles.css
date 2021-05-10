@@ -88,6 +88,7 @@
   .text-h3:hover{color:var(--h3);}/* Barbie Pink */
   .text-h4:hover{color:var(--h4);}/* Bittersweet Orange */
   .text-h5:hover{color:var(--h5);}/* Minion Yellow */
+  .text-h6:hover{color:var(--h6);}/* Minion Yellow */
   .text-a0:active{color:var(--a0);}/* #A4A4A4 */
   .text-a0.active{color:var(--a0);}/* #A4A4A4 */
   .text-a1:active{color:var(--a1);}/* #8E8E8E */

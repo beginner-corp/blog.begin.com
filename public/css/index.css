@@ -80,6 +80,18 @@
     }
   }
   
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 3;
+    transform: translateY(0);
+  }
+}
+
 .postsGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -87,10 +99,19 @@
 }
 
 .postCard {
-  padding: 1rem;
-  border-radius: .7rem;
-  background-color: bisque;
+  box-shadow: 8px 14px 38px rgb(39 44 49 / 4%), 0 3px 5px rgb(39 44 49 / 5%);
+  transition: .3s cubic-bezier(0,0,.25,1);
+  animation: HeroAnimation;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
+
+/* .postCard:hover {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+  transform: translateY(-9px);
+} */
 
 .postIMG {
   background-color: #ffff;

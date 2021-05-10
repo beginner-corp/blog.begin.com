@@ -54,10 +54,10 @@ const createCard = (function readFrontMatter() {
 exports.handler = async function index(req) {
 
   let blogCard = `
-  <div class="postsGrid">${createCard.map(card => `
-  <div class="postCard">
+  <div class="grid-lg col-3 gap1">${createCard.map(card => `
+  <div class="postCard bg-p0 p1 radius1">
   <img src=${card.frontmatter.image} alt="postIMG" height="100"/>
-      <h2><a href=/posts/${card.post.replace(".md", "")}>${card.frontmatter.title}</a></h2>
+      <h3><a class="no-underline-lg text-g10 text-h6" href=/posts/${card.post.replace(".md", "")}>${card.frontmatter.title}</a></h3>
       <p>${card.frontmatter.description}</p>
     </div>`).join('')}
   </div>
