@@ -1,16 +1,16 @@
 ---
-title: Bundling is an anti pattern ultimate guide
-image: 'image.png' 
+title: CSS How we got here
+image: 'image.png'
 category: uncategorized
 description: Architect is an open source project and we want YOUR help!
-author: 'Ryan Block'
-avi: 'ryan.png'
+author: 'ShawnHosea'
+avi: 'shawn.jpg'
 readtime: '4 mins'
 ---
 
-# First post
+# Fifth post
 
-## This is the first post (Sub-Header(H2)) 
+## This is the fifth post (Sub-Header(H2)) 
 
 **The standard Lorem Ipsum passage, used since the 1500s**
 
@@ -23,14 +23,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 - Sed eu lacus ac dui molestie tincidunt.
 - Etiam finibus purus at gravida venenatis.
 
-```js
-let blogCard = `
-  <div class="grid-lg col-3 gap1">${createCard.map(card => `
-  <div class="postCard bg-p0 p1 radius1 mb-1">
-  <img src=${card.frontmatter.image} alt="postIMG" height="100"/>
-      <h3><a class="no-underline-lg text-g10 text-h6" href=/posts/${card.post.replace(".md", "")}>${card.frontmatter.title}</a></h3>
-      <p>${card.frontmatter.description}</p>
-    </div>`).join('')}
-  </div>
-  `
-```

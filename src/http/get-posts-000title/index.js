@@ -76,6 +76,7 @@ exports.handler = async function http (req) {
       frontmatter = yaml.load(str)
     })
   const children = md.render(file)
+  
   const { category, description, title, image } = frontmatter
 
   return {
@@ -84,7 +85,7 @@ exports.handler = async function http (req) {
       'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0',
       'content-type': 'text/html; charset=utf8'
     },
-    body: Html({children: main({children})
+    body: Html({children: main({category, description, title, image: arc.static(image), children})
     }),
     
   }

@@ -56,14 +56,14 @@ exports.handler = async function index(req) {
   <div class="grid-lg col-3 gap1">${createCard.map(card => `
   <div class="postCard bg-p0 radius1 mb-1">
     <div height="100">
-      <img class="object-fill  radius-br-none radius-bl-none" src=${card.frontmatter.image} alt="postIMG" height="200"/>
+      <img class="object-fill  radius1 radius-br-none radius-bl-none" src=${card.frontmatter.image} alt="postIMG" height="200"/>
     </div>
     <div class="p1">
-      <h3><a class="no-underline-lg text-g10 text-h6" href=/posts/${card.post.replace(".md", "")}>${card.frontmatter.title}</a></h3>
-      <p>${card.frontmatter.description}</p>
+      <h3 class="mb-3"><a class="no-underline-lg text-p5 text-h1" href=/posts/${card.post.replace(".md", "")}>${card.frontmatter.title}</a></h3>
+      <p class="text-g8 mb-3">${card.frontmatter.description}</p>
       <img class="radius-pill" src=${card.frontmatter.avi} alt="avi" height="50"/>
       <small>${card.frontmatter.author}</small>
-      <span><small>${card.frontmatter.readtime}</small></span>
+      <span class="text-g4"><small>${card.frontmatter.readtime}</small></span>
     </div>
     </div>`).join('')}
   </div>
@@ -71,8 +71,8 @@ exports.handler = async function index(req) {
   
   let headline = `
   <div class="mb3 text-center">
-    <h1 class="font-black text4">The Beginners Blog</h1>
-    <h2>Back to the basics</h2>
+    <h1 class="font-black text-p5 text4">The Begin Blog</h1>
+    <h2 class="text-g8">A treatise on elegance.</h2>
   </div>
   `
 
@@ -84,7 +84,7 @@ exports.handler = async function index(req) {
     },
     body: Html({
       children: main({children: `
-        ${headline}
+       
         ${blogCard}
       `
       })

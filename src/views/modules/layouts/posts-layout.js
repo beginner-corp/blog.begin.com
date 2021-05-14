@@ -2,10 +2,12 @@ import Logo from '../components/logo.js'
 import Icon from '../components/icon.js'
 import GithubLink from '../components/github-link.js'
 import SlackLink from '../components/slack-link.js'
+// import BlogCard from '../components/blog-card.js'
 
 export default function postsLayout (props = {}) {
 
   let children = props.children || ""
+  let image = props.image || ""
     return `
     <div
     class="
@@ -47,8 +49,8 @@ export default function postsLayout (props = {}) {
           justify-between
         "
       >
-        ${SlackLink()}
-        ${GithubLink({ classes: 'ml-2' })}
+       
+        <small><a class="text-p6 text-h0" href="https://begin.com"><--- back to begin</a></small>
         <button
           aria-label="Menu"
           id="menu-button"
@@ -90,10 +92,16 @@ export default function postsLayout (props = {}) {
           "
         >
         </h1>
+        <img src=${image} alt='blogimg'/>
         ${children}
         
       </div>
     </main>
+    <footer class="bg-p5 text-g0">
+        <ul>
+          <li><a>Link1</a></li>
+        </ul>
+    </footer>
   </div>
     `
   }

@@ -1,17 +1,7 @@
 let { http } = require('@architect/functions')
+let redirect = require('./redirect')
 
-// middleware to preserve old urls
-async function redirect(req) {
-  // return{req}
-  if (req.requestContext.http.method.toLowerCase() === 'get' && req.requestContext.http.path === '/') {
-    return {
-      statusCode: 303,
-      headers: {
-        location: '/'
-      }
-    }
-  }
-}
+
 
 // middleware proxy s3 assets
 let asap = http.proxy({

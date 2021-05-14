@@ -21,6 +21,8 @@
     --g9:#383838;/* #383838 */
     --g10:#222222;/* #222222 */
     --g11:#FFF;   /* #FFF*/
+    --h0:#fff;/* #fff */
+    --h1:#0057b8;/* #0057b8 */
     --h6:#CFCFCF;/* #CFCFCF */
     --a0:#A4A4A4;/* #A4A4A4 */
     --a1:#8E8E8E;/* #8E8E8E */
@@ -70,6 +72,8 @@
   .text-p3{color:var(--p3);}/* Barbie Pink light */
   .text-p4{color:var(--p4);}/* Bittersweet Orange light */
   .text-p5{color:var(--p5);}/* Royal purple */
+  .text-p6{color:var(--p6);}/* #ffc245 */
+  .text-p7{color:var(--p7);}/* #ff455a */
   .text-g0{color:var(--g0);}/* #FBFBFB */
   .text-g1{color:var(--g1);}/* #E5E5E5 */
   .text-g2{color:var(--g2);}/* #CFCFCF */
