@@ -15,6 +15,7 @@ const arcGrammar = require('./arc-grammar')
 hljs.registerLanguage('arc', arcGrammar)
 const readFile = util.promisify(fs.readFile)
 const Html = require('@architect/views/modules/document/html.js').default
+const postsLayout = require('@architect/views/modules/layouts/posts-layout.js').default
 const main =require('@architect/views/modules/pages/main.js').default
 
 const yaml = require('js-yaml')
@@ -85,7 +86,7 @@ exports.handler = async function http (req) {
       'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0',
       'content-type': 'text/html; charset=utf8'
     },
-    body: Html({children: main({category, description, title, image: arc.static(image), children})
+    body: Html({children: postsLayout({category, description, title, image: arc.static(image), children})
     }),
     
   }

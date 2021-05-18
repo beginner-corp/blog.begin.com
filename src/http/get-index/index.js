@@ -17,6 +17,7 @@ hljs.registerLanguage('arc', arcGrammar)
 const readFile = util.promisify(fs.readFile)
 
 const Html = require('@architect/views/modules/document/html.js').default
+const layout = require('@architect/views/modules/layouts/layout.js').default
 const yaml = require('js-yaml')
 const EDIT_DOCS = `edit/main/src/views/docs/`
 const cache = {} // cheap warm cache
@@ -83,7 +84,7 @@ exports.handler = async function index(req) {
       'content-type': 'text/html; charset=utf8'
     },
     body: Html({
-      children: main({children: `
+      children: layout({children: `
        
         ${blogCard}
       `

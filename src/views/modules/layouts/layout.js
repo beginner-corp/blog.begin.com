@@ -1,10 +1,10 @@
 import Logo from '../components/logo.js'
 import Icon from '../components/icon.js'
-import GithubLink from '../components/github-link.js'
-import SlackLink from '../components/slack-link.js'
-// import BlogCard from '../components/blog-card.js'
+// import GithubLink from '../components/github-link.js'
+// import SlackLink from '../components/slack-link.js'
 
-export default function postsLayout (props = {}) {
+
+export default function layout (props = {}) {
 
   let children = props.children || ""
   let image = props.image || ""
@@ -92,7 +92,6 @@ export default function postsLayout (props = {}) {
           "
         >
         </h1>
-        <img src=${image} alt='blogimg'/>
         ${children}
         
       </div>
