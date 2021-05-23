@@ -63,25 +63,33 @@ exports.handler = async function index(req) {
       b-p18
       radius1
       shadow-card
+      object-contain
       transform-scale-hover
       transform-scale-active
       transition-transform"
     >
-    <a href="/posts/${card.post.replace(".md", "")}">
+    <a class="no-underline-lg" href="/posts/${card.post.replace(".md", "")}">
       <div class="
-        pb3
+        pt5
+        pb5
+        pr1
+        pl1
+        topCorners
         background-size-cover
         transition-transform
         transition-background-x"
         style="background-image:url(${arc.static(card.frontmatter.image)})">
+        <h3 class="text-p1 ">${card.frontmatter.title}</h3>
       </div>
     </a>
     <div class="p1">
-      <h3 class="mb-3"><a class="no-underline-lg text-p5 text-h1" href=/posts/${card.post.replace(".md", "")}>${card.frontmatter.title}</a></h3>
+      
       <p class="text-g8 mb-3">${card.frontmatter.description}</p>
-      <img class="radius-pill" src=${card.frontmatter.avi} alt="avi" height="50"/>
-      <small>${card.frontmatter.author}</small>
-      <span class="text-g4"><small>${card.frontmatter.readtime}</small></span>
+      <div class="grid-lg items-center flow-col mt1">
+        <img class="radius-pill" src=${card.frontmatter.avi} alt="avi" height="40"/>
+        <small>${card.frontmatter.author}</small>
+        <small class="text-g4">${card.frontmatter.readtime}</small>
+      </div>
     </div>
     </div>`).join('')}
   </div>

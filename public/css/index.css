@@ -130,3 +130,12 @@
 .guide-link:active > .h-gradient {
   background-position-x: 0;
 }
+
+.background-size-cover {
+  background-size:cover;
+}
+
+.topCorners {
+  border-top-right-radius:4px;
+  border-top-left-radius:4px;
+}
