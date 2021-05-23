@@ -70,14 +70,16 @@ exports.handler = async function index(req) {
     >
     <a class="no-underline-lg" href="/posts/${card.post.replace(".md", "")}">
       <div class="
-        pt5
-        pb5
+        pt3
+        pb3
         pr1
         pl1
         topCorners
         background-size-cover
         transition-transform
         transition-background-x"
+        guides-item-bg-h
+        h-gradient
         style="background-image:url(${arc.static(card.frontmatter.image)})">
         <h3 class="text-p1 ">${card.frontmatter.title}</h3>
       </div>
@@ -112,6 +114,7 @@ exports.handler = async function index(req) {
       children: layout({children: `
        
         ${blogCard}
+        ${headline}
       `
       })
     })

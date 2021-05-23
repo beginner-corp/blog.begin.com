@@ -10,7 +10,7 @@ export default function postsLayout (props = {}) {
     return `
     <div
     class="
-      h-full-lg
+      
     "
   >
     <header
@@ -91,7 +91,7 @@ export default function postsLayout (props = {}) {
           "
         >
         </h1>
-        <img src=${image} alt='blogimg'/>
+        <img src=${image} alt='blogimg' height="500"/>
         ${children}
         
       </div>

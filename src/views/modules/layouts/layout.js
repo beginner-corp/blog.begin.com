@@ -11,7 +11,7 @@ export default function layout (props = {}) {
     return `
     <div
     class="
-      h-full-lg
+      
     "
   >
     <header
@@ -96,10 +96,18 @@ export default function layout (props = {}) {
         
       </div>
     </main>
-    <footer class="bg-p5 text-g0">
-        <ul>
-          <li><a>Link1</a></li>
-        </ul>
+    <footer class="
+    p2
+   
+    w-full
+    
+    
+    bg-p5
+    text-g0"
+    >
+      <ul>
+        <li><a>Link1</a></li>
+      </ul>
     </footer>
   </div>
     `

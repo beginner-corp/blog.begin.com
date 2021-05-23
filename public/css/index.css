@@ -92,12 +92,6 @@
   }
 }
 
-.postsGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-}
-
 .shadow-card {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.5s;
@@ -133,6 +127,10 @@
 
 .background-size-cover {
   background-size:cover;
+}
+
+.guides-item-bg-h {
+  height: 7.777rem;
 }
 
 .topCorners {
