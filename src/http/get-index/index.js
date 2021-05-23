@@ -53,12 +53,29 @@ const createCard = (function readFrontMatter() {
 
 exports.handler = async function index(req) {
 
+  // let background = `background-image:url(${arc.static(card.frontmatter.image)});`
+
   let blogCard = `
-  <div class="grid-lg col-3 gap1">${createCard.map(card => `
-  <div class="postCard bg-p0 radius1 mb-1">
-    <div height="100">
-      <img class="object-fill  radius1 radius-br-none radius-bl-none" src=${card.frontmatter.image} alt="postIMG" height="200"/>
-    </div>
+    <div class="grid-lg col-3 gap1">${createCard.map(card => `
+    <div class=" 
+      mb0
+      bg-p1
+      b-p18
+      radius1
+      shadow-card
+      transform-scale-hover
+      transform-scale-active
+      transition-transform"
+    >
+    <a href="/posts/${card.post.replace(".md", "")}">
+      <div class="
+        pb3
+        background-size-cover
+        transition-transform
+        transition-background-x"
+        style="background-image:url(${arc.static(card.frontmatter.image)})">
+      </div>
+    </a>
     <div class="p1">
       <h3 class="mb-3"><a class="no-underline-lg text-p5 text-h1" href=/posts/${card.post.replace(".md", "")}>${card.frontmatter.title}</a></h3>
       <p class="text-g8 mb-3">${card.frontmatter.description}</p>
