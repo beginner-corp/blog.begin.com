@@ -81,11 +81,11 @@ exports.handler = async function index(req) {
         guides-item-bg-h
         h-gradient
         style="background-image:url(${arc.static(card.frontmatter.image)})">
-        <h3 class="text-p1 ">${card.frontmatter.title}</h3>
-      </div>
-    </a>
-    <div class="p1">
-      
+        </div>
+        </a>
+        <div class="p1">
+        
+        <h3 class="">${card.frontmatter.title}</h3>
       <p class="text-g8 mb-3">${card.frontmatter.description}</p>
       <div class="grid-lg items-center flow-col mt1">
         <img class="radius-pill" src=${card.frontmatter.avi} alt="avi" height="40"/>
