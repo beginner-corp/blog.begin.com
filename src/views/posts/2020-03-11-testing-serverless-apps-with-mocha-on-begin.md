@@ -2,7 +2,7 @@
 title: Testing serverless apps with Mocha on Begin
 image: 'arc21.png' 
 category: uncategorized
-description: TIn this post we’ll demonstrate using Babel to implement a great new unreleased JS feature:optional chaining.
+description: In this post we’ll demonstrate using Babel to implement a great new unreleased JS feature:optional chaining.
 author: 'Paul Chin Jr'
 avi: 'paul.jpg'
 readtime: '3 mins'
