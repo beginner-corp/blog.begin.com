@@ -2,7 +2,7 @@ let fs = require('fs')
 const path = require('path')
 const util = require('util')
 require = require('esm')(module) // eslint-disable-line
-const main = require('@architect/views/modules/pages/main.js').default
+
 const Markdown = require('markdown-it')
 const markdownClass = require('@toycode/markdown-it-class')
 const markdownAnchor = require('markdown-it-anchor')
@@ -51,12 +51,18 @@ const createCard = (function readFrontMatter() {
     return results
 })()
 
+
+
+let sortedCards = createCard.sort((a, b) => (a.start > b.start ? 1 : -1))
+
+
+
 exports.handler = async function index(req) {
 
   // let background = `background-image:url(${arc.static(card.frontmatter.image)});`
 
   let blogCard = `
-    <div class="grid-lg col-3 gap1">${createCard.map(card => `
+  <div class="grid-lg col-3 gap1">${createCard.map(card => `
     <div class=" 
       mb0
       bg-p1
@@ -68,7 +74,7 @@ exports.handler = async function index(req) {
       transform-scale-active
       transition-transform"
     >
-    <a class="no-underline-lg" href="/posts/${card.post.replace(".md", "")}">
+      <a class="no-underline-lg" href="/posts/${card.post.replace(".md", "")}">
       <div class="
         pt3
         pb3
@@ -81,18 +87,17 @@ exports.handler = async function index(req) {
         guides-item-bg-h
         h-gradient
         style="background-image:url(${arc.static(card.frontmatter.image)})">
-        </div>
-        </a>
-        <div class="p1">
-        
-        <h3 class="">${card.frontmatter.title}</h3>
-      <p class="text-g8 mb-3">${card.frontmatter.description}</p>
-      <div class="grid-lg items-center flow-col mt1">
-        <img class="radius-pill" src=${card.frontmatter.avi} alt="avi" height="40"/>
-        <small>${card.frontmatter.author}</small>
-        <small class="text-g4">${card.frontmatter.readtime}</small>
       </div>
-    </div>
+      </a>
+        <div class="p1">  
+          <h3 class="">${card.frontmatter.title}</h3>
+          <p class="text-g8 mb-3">${card.frontmatter.description}</p>
+          <div class="grid-lg items-center flow-col mt1">
+            <img class="radius-pill" src=${card.frontmatter.avi} alt="avi" height="40"/>
+            <small>${card.frontmatter.author}</small>
+            <small class="text-g4">${card.frontmatter.readtime}</small>
+          </div>
+        </div>
     </div>`).join('')}
   </div>
   `
