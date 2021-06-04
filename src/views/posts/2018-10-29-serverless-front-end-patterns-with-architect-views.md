@@ -6,6 +6,7 @@ description: Retrieve data from any static site with Architect
 author: 'Kristopher Joseph'
 avi: 'kj.png'
 readtime: '3 mins'
+published: '10-29-2018'
 ---
 
 <small>Photo by Val Vesa</small>

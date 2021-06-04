@@ -6,6 +6,7 @@ description: The forecast is cloudy; with zero chance of servers
 author: 'Brian Leroux'
 avi: 'brian.jpg'
 readtime: '9 mins'
+published: '10-08-2019'
 ---
 
 <small>Photo by Sam Schooler</small>

@@ -6,6 +6,7 @@ description: Seamless integration of SPAs & static site generators with a super-
 author: 'Brian Leroux'
 avi: 'brian.jpg'
 readtime: '5 mins'
+published: '02-06-2019'
 ---
 
 <small>Photo by Ahmad Kadhim</small>

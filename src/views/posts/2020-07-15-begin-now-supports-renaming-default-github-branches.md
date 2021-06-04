@@ -6,6 +6,7 @@ description: We‘re excited to announce that Begin apps will deploy with any de
 author: 'Paul Chin Jr'
 avi: 'paul.jpg'
 readtime: '3 mins'
+published: '07-15-2020'
 ---
 
 <small>Photo by Jan Huber</small>

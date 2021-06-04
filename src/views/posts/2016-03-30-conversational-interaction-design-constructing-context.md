@@ -6,6 +6,7 @@ description: Recently I wrote about interface visibility — the presence and de
 author: 'Ryan Block'
 avi: 'ryan.png'
 readtime: '7 mins'
+published: '03-30-2016'
 ---
 
 # Conversational interaction design: constructing context

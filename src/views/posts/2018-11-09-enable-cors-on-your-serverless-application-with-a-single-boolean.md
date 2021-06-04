@@ -6,6 +6,7 @@ description: Retrieve data from any static site with Architect
 author: 'Brian Leroux'
 avi: 'brian.jpg'
 readtime: '3 mins'
+published: '11-09-2018'
 ---
 
 <small>photo by Rye Jessen</small>

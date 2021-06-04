@@ -53,9 +53,13 @@ const createCard = (function readFrontMatter() {
 
 
 
-let sortedCards = createCard.sort((a, b) => (a.start > b.start ? 1 : -1))
+// let sortedCards = createCard.sort(function(a, b) {
+//   console.log("post1: ", a, "post2: ", b)
+// })
 
+let sortedCards = createCard.sort((a, b) => (a.post < b.post ? 1 : -1))
 
+// console.log(sortedCards)
 
 exports.handler = async function index(req) {
 

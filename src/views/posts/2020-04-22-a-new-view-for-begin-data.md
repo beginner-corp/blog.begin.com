@@ -6,6 +6,7 @@ description: Begin Data is a fast, durable key value store that comes with every
 author: 'Paul Chin Jr'
 avi: 'paul.jpg'
 readtime: '2 mins'
+published: '04-22-2020'
 ---
 
 # A new view for Begin Data

@@ -6,6 +6,7 @@ description: In this post we’ll demonstrate the basics of testing with TAP on 
 author: 'Paul Chin Jr'
 avi: 'paul.jpg'
 readtime: '3 mins'
+published: '03-09-2020'
 ---
 
 <small>Testing with TAP is pretty easy!</small>

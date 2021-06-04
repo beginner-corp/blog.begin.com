@@ -6,6 +6,7 @@ description: Author serverless AWS Lambda functions with next-generation JS, and
 author: 'Brian Leroux'
 avi: 'brian.jpg'
 readtime: '3 mins'
+published: '10-31-2019'
 ---
 
 # How to create a bundler-free OpenJS Architect serverless app with Babel

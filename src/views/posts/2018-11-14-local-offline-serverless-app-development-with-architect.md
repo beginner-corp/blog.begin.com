@@ -6,6 +6,7 @@ description: Build & deploy serverlessly without sacrificing the local developme
 author: 'Brian Leroux'
 avi: 'brian.jpg'
 readtime: '3 mins'
+published: '11-14-2018'
 ---
 
 <small>photo by Valeriy Andrushko</small>

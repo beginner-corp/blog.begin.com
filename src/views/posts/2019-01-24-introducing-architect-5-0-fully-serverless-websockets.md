@@ -6,6 +6,7 @@ description: Realtime serverless compute is here!
 author: 'Brian Leroux'
 avi: 'brian.jpg'
 readtime: '5 mins'
+published: '01-24-2019'
 ---
 
 <small>Photo by John Barkiple</small>

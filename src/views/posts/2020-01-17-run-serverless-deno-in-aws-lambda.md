@@ -6,6 +6,7 @@ description: Use Begin to build a serverless / FASTstack Deno app!
 author: 'Brian Leroux'
 avi: 'brian.jpg'
 readtime: '3 mins'
+published: '01-17-2019'
 ---
 
 # Run serverless Deno in AWS Lambda
