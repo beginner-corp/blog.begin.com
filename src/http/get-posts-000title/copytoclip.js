@@ -1,15 +1,12 @@
 module.exports = function copytoclip() {
   
-  (function() {
-
-    const copyButton = document.getElementById('copy-button')
-    copyButton.onclick = copyTextHandler
-
-    const codeBlock = document.getElementById('code');
-    const copySuccess = document.getElementById('copy-success');
-    
-  }())
+  const copyButton = document.getElementById('copy-button')
+  copyButton.onclick = copyTextHandler
+ 
+  const codeBlock = document.getElementById('code');
+  const copySuccess = document.getElementById('copy-success');
   
+
   const copyTextHandler = () => {
     const text = codeBlock.innerText;
 
