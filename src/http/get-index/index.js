@@ -51,13 +51,15 @@ const createCard = (function readFrontMatter() {
     return results
 })()
 
-createCard.sort((a, b) => (a.post < b.post ? 1 : -1))
+
+let sortedCards = createCard.sort((a, b) => (a.post < b.post ? 1 : -1))
+
 
 exports.handler = async function index(req) {
 
   let blogCard = `
   <div class="grid-lg col-3 gap1">${createCard.map(card => `
-  <a class="no-underline-lg no-underline" href="/posts/${card.post.replace(".md", "")}"><div class=" 
+    <div class=" 
       mb0
       bg-p1
       b-p18
@@ -68,6 +70,7 @@ exports.handler = async function index(req) {
       transform-scale-active
       transition-transform"
     >
+      <a class="no-underline-lg" href="/posts/${card.post.replace(".md", "")}">
       <div class="
         pt3
         pb3
@@ -81,17 +84,17 @@ exports.handler = async function index(req) {
         h-gradient
         style="background-image:url(${arc.static(card.frontmatter.image)})">
       </div>
-     
+      </a>
         <div class="p1">  
-          <h3 class="text-p5">${card.frontmatter.title}</h3>
+          <h3 class="">${card.frontmatter.title}</h3>
           <p class="text-g8 mb-3">${card.frontmatter.description}</p>
           <div class="grid-lg items-center flow-col mt1">
             <img class="radius-pill" src=${card.frontmatter.avi} alt="avi" height="40"/>
-            <small class="text-p5">${card.frontmatter.author}</small>
+            <small>${card.frontmatter.author}</small>
             <small class="text-g4">${card.frontmatter.readtime}</small>
           </div>
         </div>
-    </div>`).join('')}</a>
+    </div>`).join('')}
   </div>
   `
   
