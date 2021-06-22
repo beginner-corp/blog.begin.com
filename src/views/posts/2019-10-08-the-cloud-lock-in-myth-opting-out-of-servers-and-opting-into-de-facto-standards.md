@@ -1,6 +1,6 @@
 ---
 title: The cloud lock-in myth:opting out of servers, and opting into de facto standards
-image: 'arc33.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: The forecast is cloudy; with zero chance of servers
 author: 'Brian Leroux'
@@ -9,9 +9,11 @@ readtime: '9 mins'
 published: '10-08-2019'
 ---
 
-<small>Photo by Sam Schooler</small>
 
 # The cloud lock-in myth: opting out of servers, and opting into de facto standards
+
+![arc33](arc33.jpg)
+<small>Photo by Sam Schooler</small>
 
 Practically all future compute workloads will run on cloud vendor infra. This is hardly a controversial statement in late 2019. But where we are in this lengthy transition, and how it will unfold, is still heavily debated, as are the considerations behind deciding on cloud vendors, and services. The flashpoint of this debate is, as ever, anxiety around lock-in — a scary and nebulous concept that strikes fear into the hearts of devs and CTOs alike.
 

@@ -1,6 +1,6 @@
 ---
 title: Serverless frontend patterns with Architect Views
-image: 'arc54.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: Retrieve data from any static site with Architect
 author: 'Kristopher Joseph'
@@ -9,9 +9,11 @@ readtime: '3 mins'
 published: '10-29-2018'
 ---
 
-<small>Photo by Val Vesa</small>
 
 # Serverless frontend patterns with Architect Views
+
+![arc54](arc54.jpg)
+<small>Photo by Val Vesa</small>
 
 [Architect](https://arc.codes/) projects can now use the `src/views` directory, which automatically shares code to all — or just some — of your project’s `@http` `GET` functions.
 

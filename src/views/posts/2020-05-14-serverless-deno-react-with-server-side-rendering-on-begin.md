@@ -1,6 +1,6 @@
 ---
 title: Serverless Deno + React with server-side rendering on Begin
-image: 'arc11.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: In this post we’ll look at an example app deployed on Begin with CI/CD.
 author: 'Paul Chin Jr'
@@ -9,9 +9,11 @@ readtime: '3 mins'
 published: '05-14-2020'
 ---
 
-<small>Photo by Maria Oswalt on Unsplash</small>
 
 # Serverless Deno + React with server-side rendering on Begin
+
+![arc11](arc11.jpg)
+<small>Photo by Maria Oswalt on Unsplash</small>
 
 [Deno](https://deno.land/) is a next-generation JavaScript runtime that features a built-in TypeScript compiler and code bundler, allowing developers to create applications without Webpack, Babel, or Rollup. Oh, and we can run Deno in serverless functions! Combining these results in a much cleaner codebase for server-side rendered React.js applications.
 

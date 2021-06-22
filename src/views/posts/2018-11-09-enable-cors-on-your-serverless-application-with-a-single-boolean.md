@@ -1,6 +1,6 @@
 ---
 title: Enable CORS on your serverless application with a single boolean
-image: 'arc53.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: Retrieve data from any static site with Architect
 author: 'Brian Leroux'
@@ -9,9 +9,11 @@ readtime: '3 mins'
 published: '11-09-2018'
 ---
 
-<small>photo by Rye Jessen</small>
 
 # Enable CORS on your serverless application with a single boolean
+
+![arc53](arc53.jpg)
+<small>photo by Rye Jessen</small>
 
 > Previous versions of this post referred to using CORS in a now out of date version of Architect; however, we have preserved forwards compatibility in our runtime helper library [@architect/functions](https://www.npmjs.com/package/@architect/functions), and updated this post.
 

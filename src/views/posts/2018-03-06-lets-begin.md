@@ -1,6 +1,6 @@
 ---
 title: Let’s Begin!
-image: 'arc58.png' 
+image: 'image.png' 
 category: uncategorized
 description: Today’s tools for managing work are broken
 author: 'Ryan Block'
@@ -10,6 +10,8 @@ published: '03-06-2018'
 ---
 
 # Let’s Begin!
+
+![arc58](arc58.png)
 
 **Today’s tools for managing work are broken**
 

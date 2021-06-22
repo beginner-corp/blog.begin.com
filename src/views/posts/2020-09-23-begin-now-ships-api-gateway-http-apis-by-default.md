@@ -1,6 +1,6 @@
 ---
 title: Begin now ships API Gateway HTTP APIs by default
-image: 'arc7.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: We’re excited to announce that all new Begin apps will now ship with next-generation AWS API Gateway HTTP APIs by default!
 author: 'Paul Chin Jr'
@@ -8,9 +8,11 @@ avi: 'paul.jpg'
 readtime: '3 mins'
 published: '09-23-2020'
 ---
-<small>Photo by Victor Lu</small>
 
 # Begin now ships API Gateway HTTP APIs by default
+
+![arc7](arc7.jpg)
+<small>Photo by Victor Lu</small>
 
 We’re excited to announce that all new Begin apps will now ship with next-generation AWS API Gateway `HTTP` APIs by default!
 

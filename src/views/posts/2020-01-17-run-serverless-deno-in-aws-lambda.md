@@ -1,6 +1,6 @@
 ---
 title: Make a serverless Express API with OpenJS Architect
-image: 'deno.png' 
+image: 'image.png' 
 category: uncategorized
 description: Use Begin to build a serverless / FASTstack Deno app!
 author: 'Brian Leroux'
@@ -10,6 +10,8 @@ published: '01-17-2019'
 ---
 
 # Run serverless Deno in AWS Lambda
+
+![deno](deno.png)
 
 > This post was last updated May, 2020 as Deno hit 1.0
 

@@ -1,6 +1,6 @@
 ---
 title: Serverless app testing with Jest on Begin
-image: 'arc22.png' 
+image: 'image.png' 
 category: uncategorized
 description: In this post we’ll demonstrate the basics of testing with Jest on a serverless app in Begin; the example app in this post will achieve the same results as our article about testing with Tap.
 author: 'Paul Chin Jr'
@@ -10,6 +10,8 @@ published: '03-10-2020'
 ---
 
 # Serverless app testing with Jest on Begin
+
+![arc22](arc22.png)
 
 Jest is a super popular and very robust JavaScript testing library. As you likely know, investing in your testing will help you write highly maintainable applications, and help ensure that new code will be less likely to cause regressions.
 

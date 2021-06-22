@@ -94,7 +94,7 @@ export default function postsLayout (props = {}) {
           "
         >
         </h1>
-        <img class="w-full boxshadow mb3 block" src=${image} alt='blogimg' style="height: auto;"/>
+        <img class="w-full mb3 block" src=${image} alt='blogimg' style="height: auto;"/>
         <div class="grid-lg items-center flow-column-dense mt1 mb1">
           <img class="radius-pill" src=${avi} alt='avi' style="height:2rem;"/>
           <small>${author}</small>

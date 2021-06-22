@@ -1,6 +1,6 @@
 ---
 title: How to create an OpenJS Architect serverless app with TypeScript
-image: 'arc25.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: Author serverless AWS Lambda functions with TypeScript
 author: 'Brian Leroux'
@@ -10,6 +10,8 @@ published: '10-31-2019'
 ---
 
 # How to create an OpenJS Architect serverless app with TypeScript
+
+![arc25](arc25.jpg)
 
 In this article we’ll set up an Architect project that uses TypeScript to compile code for AWS Lambda.
 

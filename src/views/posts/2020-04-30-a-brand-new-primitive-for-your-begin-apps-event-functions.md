@@ -1,6 +1,6 @@
 ---
 title: A brand new primitive for your Begin apps:event functions!
-image: 'arc14.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: Today we’re introducing an entirely new primitive to Begin apps:event functions (@events)!
 author: 'Ryan Block'
@@ -9,9 +9,11 @@ readtime: '4 mins'
 published: '04-30-2020'
 ---
 
-<small>Photo by Traf</small>
 
 # A brand new primitive for your Begin apps: event functions!
+
+![arc14](arc14.jpg)
+<small>Photo by Traf</small>
 
 Begin already gives you the most advanced set of serverless tools and application primitives in its class:
 

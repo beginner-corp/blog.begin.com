@@ -1,6 +1,6 @@
 ---
 title: Testing serverless apps with Mocha on Begin
-image: 'arc21.png' 
+image: 'image.png' 
 category: uncategorized
 description: In this post we’ll demonstrate using Babel to implement a great new unreleased JS feature:optional chaining.
 author: 'Paul Chin Jr'
@@ -10,6 +10,8 @@ published: '03-11-2020'
 ---
 
 # Testing serverless apps with Mocha on Begin
+
+![arc21](arc21.png)
 
 [Mocha](https://mochajs.org/) is a well known testing framework for Node.js. It can support both xUnit and TAP outputs, and developers can choose their favorite assertion library. Mocha’s flexibility and large community still makes it a great choice for testing your Begin apps.
 

@@ -1,6 +1,6 @@
 ---
 title: Local, offline serverless app development with Architect
-image: 'arc50.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: Build & deploy serverlessly without sacrificing the local development experience
 author: 'Brian Leroux'
@@ -9,9 +9,11 @@ readtime: '3 mins'
 published: '11-14-2018'
 ---
 
-<small>photo by Valeriy Andrushko</small>
 
 # Local, offline serverless app development with Architect
+
+![arc50](arc50.jpg)
+<small>photo by Valeriy Andrushko</small>
 
 > Devs require the ability to preview work before committing it and, perhaps more importantly, the ability to run unit and integration tests as fast as possible. Time is precious, and every iteration counts — extra steps unnecessarily extend the feedback loop and lead time to production. [Architect serverless framework](https://www.npmjs.com/package/@architect/architect) is organized and optimized around these principles.
 

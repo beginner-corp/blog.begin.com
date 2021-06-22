@@ -1,6 +1,6 @@
 ---
 title: Serverless ES Modules
-image: 'arc51.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: Frontend patterns with Architect serverless framework
 author: 'Kristopher Joseph'
@@ -9,9 +9,11 @@ readtime: '3 mins'
 published: '11-13-2018'
 ---
 
-<small>Photo by Johny Goerend</small>
 
 # Serverless ES Modules
+
+![arc51](arc51.jpg)
+<small>Photo by Johny Goerend</small>
 
 The vast majority of [browsers in use today support ES Modules](https://caniuse.com/#feat=es6-module), but until recently it’s been difficult to use modules in your project. Before widespread browser support, modules required a compilation step via a tool like Webpack (or Browserify, or Gulp, etc.) in order to convert them into something the browser could use.
 

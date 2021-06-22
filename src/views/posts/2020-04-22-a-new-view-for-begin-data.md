@@ -1,6 +1,6 @@
 ---
 title: A new view for Begin Data
-image: 'arc15.png' 
+image: 'image.png' 
 category: uncategorized
 description: Begin Data is a fast, durable key value store that comes with every Begin app — even the free ones!
 author: 'Paul Chin Jr'
@@ -10,6 +10,8 @@ published: '04-22-2020'
 ---
 
 # A new view for Begin Data
+
+![arc15](arc15.png)
 
 [Begin Data](https://docs.begin.com/en/data/begin-data) is a fast, durable key value store that comes with every Begin app — even the free ones!
 

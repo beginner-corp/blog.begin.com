@@ -1,6 +1,6 @@
 ---
 title: How to build a better bot
-image: 'arc72.gif' 
+image: 'image.png' 
 category: uncategorized
 description: The bots have landed. And as is usually the case, some early products shipped that could have used some more time in the oven. Personally, I’ve yet to use a bot that’s really impressed me.
 author: 'Ryan Block'
@@ -10,6 +10,8 @@ published: '04-19-2017'
 ---
 
 # How to build a better bot
+
+![arc72](arc72.gif)
 
 The bots have landed. And as is usually the case, some early products shipped that could have [used some](https://twitter.com/trekforever/status/720668368496230400) [more time](https://twitter.com/kifleswing/status/719973868040011776) [in the oven](https://twitter.com/spencerchen/status/721920593797382145). Personally, I’ve yet to use a bot that’s really impressed me.
 

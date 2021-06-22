@@ -1,6 +1,6 @@
 ---
 title: The real reason frameworks get adopted
-image: 'arc46.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: It’s all about the capabilities of new users
 author: 'MRB'
@@ -9,9 +9,11 @@ readtime: '4 mins'
 published: '12-03-2018'
 ---
 
-<small>Photo by Dan Gold</small>
 
 # The real reason frameworks get adopted
+
+![arc46](arc46.jpg)
+<small>Photo by Dan Gold</small>
 
 Sitting down to write a serverless application in 2018 feels a lot like it did to write a greenfield web application in the pre-Rails and Django times. Before the titanic Ruby and Python frameworks were de rigeur, things were slow, messy, and there were no conventions to speak of.
 

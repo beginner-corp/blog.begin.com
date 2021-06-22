@@ -1,6 +1,6 @@
 ---
 title: Conversational interaction design:constructing context
-image: 'arc76.png' 
+image: 'image.png' 
 category: uncategorized
 description: Recently I wrote about interface visibility — the presence and degree of friction in interface design and human computer interaction — and the idea that it exists distinctly from specific interface paradigms.
 author: 'Ryan Block'
@@ -9,7 +9,10 @@ readtime: '7 mins'
 published: '03-30-2016'
 ---
 
+
 # Conversational interaction design: constructing context
+
+![arc77](arc76.png)
 
 Recently I wrote about interface visibility — the presence and degree of friction in interface design and human computer interaction — and [the idea that it exists distinctly from specific interface paradigms](https://medium.com/@ryan/bots-messaging-and-the-interface-visibility-scale-c77ce56f1401).
 

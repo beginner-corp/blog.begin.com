@@ -1,6 +1,6 @@
 ---
 title: Architect 8.4:say hello to Lambda treeshaking
-image: 'arc1.png' 
+image: 'image.png' 
 category: uncategorized
 description: One of the thing that sets OpenJS Architect apart from other serverless tools is its opinion that serverless apps work best when composed of many small, discrete Lambda cloud functions.
 author: 'Ryan Block'
@@ -10,6 +10,8 @@ published: '12-21-2020'
 ---
 
 # Architect 8.4: say hello to Lambda treeshaking
+
+![arc1](arc1.png)
 
 One of the thing that sets OpenJS Architect apart from other serverless tools is its opinion that serverless apps work best when composed of many small, discrete Lambda cloud functions.
 

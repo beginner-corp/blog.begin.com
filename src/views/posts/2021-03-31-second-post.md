@@ -1,6 +1,6 @@
 ---
 title: The Cobblers Guide To Webcraft
-image: 'image-2.png' 
+image: 'image.png' 
 category: uncategorized
 description: Architect is an open source project and we want YOUR help!
 author: 'Kristopher Joseph'

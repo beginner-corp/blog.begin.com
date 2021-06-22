@@ -1,6 +1,6 @@
 ---
 title: Serverless app testing with TAP on Begin
-image: 'arc23.png' 
+image: 'image.png' 
 category: uncategorized
 description: In this post we’ll demonstrate the basics of testing with TAP on a serverless app in Begin; the example app in this post will achieve the same results as our article about testing with Jest.
 author: 'Paul Chin Jr'
@@ -9,9 +9,11 @@ readtime: '3 mins'
 published: '03-09-2020'
 ---
 
-<small>Testing with TAP is pretty easy!</small>
 
 # Serverless app testing with TAP on Begin
+
+![arc23](arc23.png)
+<small>Testing with TAP is pretty easy!</small>
 
 [Node-Tap (part of the TAP family)](https://node-tap.org/) is a mature, powerful, and lightweight testing framework that help you write highly maintainable applications, and help ensure that new code will be less likely to cause regressions.
 

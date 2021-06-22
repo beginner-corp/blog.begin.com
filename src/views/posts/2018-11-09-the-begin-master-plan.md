@@ -1,6 +1,6 @@
 ---
 title: The Begin master plan
-image: 'arc52.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: The future is serverless, and the future is here
 author: 'Ryan Block'
@@ -12,6 +12,8 @@ published: '11-09-2018'
 <small>photo by Ugne Vasyliute</small>
 
 # The Begin master plan
+
+![arc52](arc52.jpg)
 
 When we got started in 2015, we didn’t set out to build a serverless application platform.
 

@@ -1,6 +1,6 @@
 ---
 title: Architect 5.5:serverless meets single-page apps & static site generators
-image: 'arc39.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: Seamless integration of SPAs & static site generators with a super-fast serverless backend
 author: 'Brian Leroux'
@@ -9,9 +9,11 @@ readtime: '5 mins'
 published: '02-06-2019'
 ---
 
-<small>Photo by Ahmad Kadhim</small>
 
 # Architect 5.5: serverless meets single-page apps & static site generators
+
+![arc39](arc39.jpg)
+<small>Photo by Ahmad Kadhim</small>
 
 We’re extremely excited to announce **Architect 5.5 (Catalope)¹**, bringing seamless in-network, same-domain integration of SPAs, static site generators, and AWS serverless systems like Lambda and DynamoDB.
 

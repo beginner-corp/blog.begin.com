@@ -1,6 +1,6 @@
 ---
 title: How-to rename your ‘master’ branch to ‘main’ (or something else)
-image: 'arc8.jpg' 
+image: 'image.png' 
 category: uncategorized
 description: Terms like master-slave carry powerful implications of racial supremacy and oppression, and have no place in our lexicon. Efforts across our industry are rightfully underway to retire such references to the dustbin of history, where they belong.
 author: 'Ryan Block'
@@ -9,9 +9,11 @@ readtime: '3 mins'
 published: '07-15-2020'
 ---
 
-<small>Photo by Carly Reeves</small>
 
 # How-to rename your ‘master’ branch to ‘main’ (or something else)
+
+![arc8](arc8.jpg)
+<small>Photo by Carly Reeves</small>
 
 Terms like master-slave carry powerful implications of racial supremacy and oppression, and have no place in our lexicon. Efforts [across our industry](https://tools.ietf.org/id/draft-knodel-terminology-00.html#rfc.section.1) are [rightfully underway](https://mysqlhighavailability.com/mysql-terminology-updates/) to retire such references to the dustbin of history, where they belong.
 

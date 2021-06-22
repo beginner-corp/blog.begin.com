@@ -1,6 +1,6 @@
 ---
 title: Build an infinitely scalable* Slack app, part 2:prepping for distribution in the Slack App Directory
-image: 'arc58.png' 
+image: 'image.png' 
 category: uncategorized
 description: In part 1 of this series, we used Architect to provision the infrastructure needed to build a (theoretically) infinitely scalable serverless Slack app.
 author: 'Brian Leroux'
@@ -10,6 +10,8 @@ published: '02-16-2018'
 ---
 
 # Build an infinitely scalable* Slack app, part 2: prepping for distribution in the Slack App Directory
+
+![arc58](arc58.png)
 
 In [part 1 of this series](https://blog.begin.com/build-an-infinitely-scalable-slack-app-in-5-minutes-972789924f3f), we used [Architect](https://arc.codes/) to provision the infrastructure needed to build a (theoretically) infinitely scalable serverless Slack app.
 
