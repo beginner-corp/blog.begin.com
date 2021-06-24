@@ -45,7 +45,7 @@ module.exports = {
     ],
     a: [
       'font-medium',
-      'text-p1',
+      'text-p5',
       'text-h1'
     ],
     strong: [

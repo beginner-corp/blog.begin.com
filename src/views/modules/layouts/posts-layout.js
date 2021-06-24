@@ -1,7 +1,5 @@
 import Logo from '../components/logo.js'
 import Icon from '../components/icon.js'
-// import GithubLink from '../components/github-link.js'
-// import SlackLink from '../components/slack-link.js'
 
 export default function postsLayout (props = {}) {
 
@@ -78,6 +76,7 @@ export default function postsLayout (props = {}) {
         h-full
         p3
         overflow-auto
+        
       "
     >
       <div
@@ -95,10 +94,14 @@ export default function postsLayout (props = {}) {
         >
         </h1>
         <img class="w-full mb3 block" src=${image} alt='blogimg' style="height: auto;"/>
-        <div class="grid-lg items-center flow-column-dense mt1 mb1">
-          <img class="radius-pill" src=${avi} alt='avi' style="height:2rem;"/>
-          <small>${author}</small>
-          <small>${published}</small>
+        <div class="flex mt1 mb1">
+          <div class="">
+            <img class="radius-pill" src=${avi} alt='avi' style="height:2rem;"/>
+          </div>
+          <div class="pl-3">
+            <p class="text-p3 text-1">Written by: ${author}</p>
+            <p class="text-g4 text-1">${published}</p>
+          </div>
         </div>
         ${children}
         

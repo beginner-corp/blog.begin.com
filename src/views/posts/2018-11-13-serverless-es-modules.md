@@ -3,7 +3,7 @@ title: Serverless ES Modules
 image: 'image.png' 
 category: uncategorized
 description: Frontend patterns with Architect serverless framework
-author: 'Kristopher Joseph'
+author: 'Kristofer Joseph'
 avi: 'kj.png'
 readtime: '3 mins'
 published: '11-13-2018'

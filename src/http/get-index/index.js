@@ -59,7 +59,7 @@ exports.handler = async function index(req) {
 
   let blogCard = `
   <div class="grid-lg col-3 gap1">${createCard.map(card => `
-    <div class=" 
+    <div class="
       mb0
       bg-p1
       b-p18
@@ -70,7 +70,7 @@ exports.handler = async function index(req) {
       transform-scale-active
       transition-transform"
     >
-      <a class="no-underline-lg" href="/posts/${card.post.replace(".md", "")}">
+      <a class="no-underline-lg no-underline" href="/posts/${card.post.replace(".md", "")}">
       <div class="
         pt3
         pb3
@@ -88,10 +88,15 @@ exports.handler = async function index(req) {
       
         <div class="p1">  
           <p class="text-g8 mb-3">${card.frontmatter.description}</p>
-          <div class="grid-lg items-center flow-col mt1">
-            <img class="radius-pill" src=${card.frontmatter.avi} alt="avi" height="40"/>
-            <small class="text-p5">${card.frontmatter.author}</small>
-            <small class="text-g4">${card.frontmatter.readtime}</small>
+
+          <div class="flex items-end w-full mt1">
+            <div class="justify-start">
+              <img class="radius-pill" src=${card.frontmatter.avi} alt="avi" height="40"/>
+              <p class="text-p5 text-1">${card.frontmatter.author}</p>
+            </div>
+            <div class="justify-end">
+              <p class="text-g4 text-1 ">${card.frontmatter.readtime}</p>
+            </div>
           </div>
         </div></a>
     </div>`).join('')}

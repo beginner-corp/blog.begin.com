@@ -6,7 +6,7 @@ description: Architect is an open source project and we want YOUR help!
 author: 'Brian Leroux'
 avi: 'brian.jpg'
 readtime: '4 mins'
-published: '04-02-2021'
+published: 'April 02, 2021'
 ---
 
 # Third post
