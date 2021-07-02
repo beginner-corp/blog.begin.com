@@ -45,7 +45,7 @@ npm i slack --save
 
 ## New shiny 💖
 
-- Code now dynamically generates itself at runtime using `api.json `instead of statically compiling from it
+- Code now dynamically generates itself at runtime using `api.json ` instead of statically compiling from it
 - Async choice: all methods now will return a `Promise` if a Node style `errback` isn’t passed
 - `class` based instances can be created where all methods have `token` prebound
 

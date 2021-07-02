@@ -86,6 +86,10 @@ module.exports = {
     img: [
       'mb3',
       'mt3'
+    ],
+    code: [
+      'bg-p3',
+      'border-solid',
     ]
   }
   

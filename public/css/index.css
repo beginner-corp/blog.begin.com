@@ -141,3 +141,10 @@
   border-top-left-radius:4px;
 }
 
+code {
+  background-color: #272822;
+  color: #272822;
+  border-radius: 0.3em;
+  padding: 4px 5px 6px;
+  white-space: nowrap;
+}

@@ -51,8 +51,6 @@ export default function postsLayout (props = {}) {
           justify-between
         "
       >
-       
-        <small><a class="text-p6 text-h0" href="https://begin.com"><-- back to begin</a></small>
         <button
           aria-label="Menu"
           id="menu-button"
