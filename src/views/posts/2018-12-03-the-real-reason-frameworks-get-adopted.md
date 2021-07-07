@@ -2,7 +2,7 @@
 title: The real reason frameworks get adopted
 image: 'image.png' 
 category: uncategorized
-description: It’s all about the capabilities of new users
+description: Sitting down to write a serverless application in 2018 feels a lot like it did to write a greenfield web application in the pre-Rails and Django times. 
 author: 'MRB'
 avi: 'mrb.jpg'
 readtime: '4 mins'

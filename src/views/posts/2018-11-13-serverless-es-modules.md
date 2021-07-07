@@ -1,8 +1,8 @@
 ---
-title: Serverless ES Modules
+title: 📦 Serverless ES Modules
 image: 'image.png' 
 category: uncategorized
-description: Frontend patterns with Architect serverless framework
+description: This post will walk you through how to get started working with standards based JavaScript modules in an Architect serverless project.
 author: 'Kristofer Joseph'
 avi: 'kj.png'
 readtime: '3 mins'
