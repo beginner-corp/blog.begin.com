@@ -82,10 +82,9 @@ exports.handler = async function index(req) {
         transition-transform
         transition-background-x
         guides-item-bg-h
-        h-gradient"
-        card-image-height 
-        style="background-image:url(${arc.static(card.frontmatter.image)})
-        ">
+        h-gradient
+        "
+        style="background-image:url(${arc.static(card.frontmatter.image)})">
         <h3 class="text-p1 mb1">${card.frontmatter.title}</h3>
       </div>
       
