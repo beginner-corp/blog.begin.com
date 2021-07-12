@@ -11,7 +11,7 @@ published: 'March 06, 2018'
 
 ![arc58](post-assets/arc58.png)
 
-**Today’s tools for managing work are broken**
+## **Today’s tools for managing work are broken**
 
 You love your team and your teammates.
 

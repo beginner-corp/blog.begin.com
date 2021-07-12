@@ -11,7 +11,7 @@ published: 'April 19, 2017'
 
 ![arc72](post-assets/arc72.gif)
 
-The bots have landed. And as is usually the case, some early products shipped that could have [used some](https://twitter.com/trekforever/status/720668368496230400) [more time](https://twitter.com/kifleswing/status/719973868040011776) [in the oven](https://twitter.com/spencerchen/status/721920593797382145). Personally, I’ve yet to use a bot that’s really impressed me.
+## The bots have landed. And as is usually the case, some early products shipped that could have [used some](https://twitter.com/trekforever/status/720668368496230400) [more time](https://twitter.com/kifleswing/status/719973868040011776) [in the oven](https://twitter.com/spencerchen/status/721920593797382145). Personally, I’ve yet to use a bot that’s really impressed me.
 
 But we’ve all seen this movie before. Bumpy starts and rough edges in early days are to be expected. Fortunately, there’s a time-tested, proven way to get it right.
 
@@ -43,7 +43,7 @@ Clarity, brevity, direction, momentum, decision guidance, usefulness, attention 
 
 The patterns and best practices we’re already used to employing — from wireframing interactions, to prototyping, to iterating obsessively, to getting your product in front of users to see how it breaks — are every bit as relevant in bot creation.¹
 
-In fact, if one pays close attention to their first principles, they’ll undoubtedly discover that designing conversational interactions is remarkably similar to that of designing graphically driven interactions. (I also happen to have written an [entire post that deep-dives into conversational interaction design](https://medium.com/@ryan/conversational-interaction-design-constructing-context-b21e2341334f), which I humbly suggest reading if you’re thinking about building bots.)
+In fact, if one pays close attention to their first principles, they’ll undoubtedly discover that designing conversational interactions is remarkably similar to that of designing graphically driven interactions. (I also happen to have written an [entire post that deep-dives into conversational interaction design](/posts/2016-03-30-conversational-interaction-design-constructing-context), which I humbly suggest reading if you’re thinking about building bots.)
 
 Bots may be new(ish), but humans, and the cultural contexts they bring to the table, the metaphors they understand, and the way they interact with machines, haven’t changed a lick.
 
@@ -55,7 +55,7 @@ Without getting into the wheel-spinning of over-defining an early space (I’ll 
 
 Most bots will be available in mediums where humans communicate with each other, yes. And most of those contexts will be conversational — which is another way of saying they’ll be messaging apps.
 
-> Here’s a bot that really just does not want to talk to you.
+Here’s a bot that really just does not want to talk to you:
 
 ![arc74](post-assets/arc74.png)
 
@@ -63,7 +63,7 @@ But that doesn’t mean your bot has to actually hold a conversation. CNN’s Fa
 
 What it does want to do, however, is tell about the news. And you know what? That’s great. Not only is this a completely valid direction, it’s a highly effective use of a bot as a means of clutter-cutting. The CNN bot knows what its job is: making timely, curated information available in a way that fits into an intimate, realtime context.
 
-In my last post about bots I talked about [the need to keep users and bots aligned](https://medium.com/@ryan/conversational-interaction-design-constructing-context-b21e2341334f), and CNN’s bot is an early standout in large part because it does such a good job at maintaining alignment.
+In my last post about bots I talked about [the need to keep users and bots aligned](/posts/2016-03-30-conversational-interaction-design-constructing-context), and CNN’s bot is an early standout in large part because it does such a good job at maintaining alignment.
 
 Not unlike the old trope that a product should always do less than the people who make it think it should, the same is true for bots. It’s okay for your bot to do less, and it’s definitely ok for your bot to be dumb. And the less a bot actually does, the dumber it should probably act.
 

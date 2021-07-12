@@ -4,7 +4,6 @@ import Icon from '../components/icon.js'
 export default function postsLayout (props = {}) {
 
   let children = props.children || ""
-  let image = props.image || ""
   let title = props.title || ""
 
   let avi = props.avi || ""
@@ -96,13 +95,13 @@ export default function postsLayout (props = {}) {
        
         <h1 class="leading1">${title}</h1>
         <div class="flex mt1 mb1">
-        <div class="">
-        <img class="radius-pill" src=${avi} alt='avi' style="height:2rem;"/>
-        </div>
-        <div class="pl-3">
-        <p class="text-p5 text-1">Written by: ${author}</p>
-        <p class="text-g4 text-1">${published}</p>
-        </div>
+          <div>
+            <img class="radius-pill" src=${avi} alt='avi' style="height:2rem;"/>
+          </div>
+          <div class="pl-3">
+            <p class="text-p5 text-1">Written by: ${author}</p>
+            <p class="text-g4 text-1">${published}</p>
+          </div>
         </div>
         ${children}
     

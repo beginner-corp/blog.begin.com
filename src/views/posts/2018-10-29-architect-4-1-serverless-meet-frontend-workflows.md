@@ -13,18 +13,18 @@ published: 'October 29, 2018'
 ![arc55](post-assets/arc55.jpg)
 <small>Photo by Val Vesa</small>
 
-Last week we [released Architect 4 (Yeti)](https://blog.begin.com/introducing-architect-4-0-faster-lighter-simpler-serverless-59f6dc156bf2), focused on simplicity and speed. Today we’re incredibly stoked to share [Architect 4.1](https://arc.codes/), our most frontend friendly release ever.
+## Last week we [released Architect 4 (Yeti)](posts/2018-10-23-introducing-architect-4-0-faster-lighter-simpler-serverless), focused on simplicity and speed. Today we’re incredibly stoked to share [Architect 4.1](https://arc.codes/), our most frontend friendly release ever.
 
 4.0 introduced the new `public` directory that automatically syncs your static assets to the cloud, making it an ideal companion to your existing frontend build steps.
 
-4.1 unlocks the ability to share frontend code across cloud functions with the [introduction of @views](https://blog.begin.com/architect-4-1-serverless-meet-frontend-workflows-3b3dd457de9#e203), enabling new patterns for dynamic asset delivery and server-side rendering.
+4.1 unlocks the ability to share frontend code across cloud functions with the [introduction of @views](posts/2018-10-29-architect-4-1-serverless-meet-frontend-workflows), enabling new patterns for dynamic asset delivery and server-side rendering.
 
 Together, we think Architect’s `public` directory and `@views` system is going to change the game for web developers onboarding into the serverless world.
 
-[Jump straight into examples and tutorials of the Architect Views pattern!](https://blog.begin.com/serverless-front-end-patterns-with-architect-views-cf4748aa1ec7)
+[Jump straight into examples and tutorials of the Architect Views pattern!](posts/2018-10-29-architect-4-1-serverless-meet-frontend-workflows)
 
 or
-→ [Create a serverless app with Architect in 30s](https://blog.begin.com/architect-4-1-serverless-meet-frontend-workflows-3b3dd457de9#35cd)
+→ [Create a serverless app with Architect in 30s](https://arc.codes)
 
 ## How @views works
 

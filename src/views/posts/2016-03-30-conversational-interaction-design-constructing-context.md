@@ -11,7 +11,7 @@ published: 'March 30, 2016'
 
 ![arc77](post-assets/arc76.png)
 
-Recently I wrote about interface visibility — the presence and degree of friction in interface design and human computer interaction — and [the idea that it exists distinctly from specific interface paradigms](https://medium.com/@ryan/bots-messaging-and-the-interface-visibility-scale-c77ce56f1401).
+## Recently I wrote about interface visibility — the presence and degree of friction in interface design and human computer interaction — and [the idea that it exists distinctly from specific interface paradigms](https://medium.com/@ryan/bots-messaging-and-the-interface-visibility-scale-c77ce56f1401).
 
 Since then I’ve been itching to revisit and dig a little deeper into the nuts and bolts of conversational interaction design, specifically the way context plays a key role in the construction of meaning in user experiences that leverage natural language (especially those of the invisible variety).
 

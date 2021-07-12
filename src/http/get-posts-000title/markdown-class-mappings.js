@@ -84,8 +84,10 @@ module.exports = {
       'bg-g0'
     ],
     img: [
-      'mb3',
-      'mt3'
+      'mt-1'
+    ],
+    ol: [
+      'pl3'
     ]
   }
   

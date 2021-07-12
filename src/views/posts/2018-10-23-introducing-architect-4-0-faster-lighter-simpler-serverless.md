@@ -13,11 +13,12 @@ published: 'October 23, 2018'
 
 <small>"white rods illustration” by Pierre Châtel-Innocenti</small>
 
+
+## We’ve been listening to your feedback and today we’re extremely excited to introduce Architect 4.0 (Yeti), the fastest, simplest, most powerful way to build serverless applications.
+
 > Less, but better.
 
-We’ve been listening to your feedback and today we’re extremely excited to introduce Architect 4.0 (Yeti), the fastest, simplest, most powerful way to build serverless applications.
-
-[✨ Skip to the part where you create a serverless app with Architect in 30s](https://blog.begin.com/introducing-architect-4-0-faster-lighter-simpler-serverless-59f6dc156bf2#90ef)
+[✨ Skip to the part where you create a serverless app with Architect in 30s](posts/2018-10-23-introducing-architect-4-0-faster-lighter-simpler-serverless)
 
 ## About Architect
 

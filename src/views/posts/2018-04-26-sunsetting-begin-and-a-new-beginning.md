@@ -12,7 +12,7 @@ published: 'April 26, 2018'
 ![arc57](post-assets/arc57.png)
 <small>Photo by Mario Antonio Pena Zapatería</small>
 
-I’ve got some bad news, and some good news.
+## I’ve got some bad news, and some good news.
 
 **The bad news first: I’m sorry to say that we’re sunsetting Begin. Its final day will be Wednesday, May 9th, 2018.**
 
@@ -20,7 +20,7 @@ If you tried it out, let me thank you! It’s a privilege to get to build someth
 
 (Special shout-out if you ever took the time to send feedback — even the critical kind, which is the best! — or bug reports.)
 
-I’m confident that over time [our vision of narrow-domain-AI-enabled productivity software,](https://blog.begin.com/lets-begin-4c4f8e268be9) driven by natural language, will come to pass.
+I’m confident that over time [our vision of narrow-domain-AI-enabled productivity software,](posts/2018-03-06-lets-begin) driven by natural language, will come to pass.
 
 Unfortunately, the path we took to execute that vision — building a Slack-first team tasking tool — isn’t currently a viable one.
 

@@ -11,15 +11,13 @@ published: 'February 16, 2018'
 
 ![arc58](post-assets/arc58.png)
 
-In [part 1 of this series](https://blog.begin.com/build-an-infinitely-scalable-slack-app-in-5-minutes-972789924f3f), we used [Architect](https://arc.codes/) to provision the infrastructure needed to build a (theoretically) infinitely scalable serverless Slack app.
+## In [part 1 of this series](/posts/2018-02-07-build-an-infinitely-scalable-slack-app-in-5-minutes), we used [Architect](https://arc.codes/) to provision the infrastructure needed to build a (theoretically) infinitely scalable serverless Slack app.
 
 Slack makes it easy to install an simple app into a workspace, but to unleash the full power of the Slack platform you’ll want to enable distribution in the Slack App Directory.
 
 In this article we will implement the **Add to Slack** OAuth flow with AWS Lambda and persist the resulting access token to DynamoDB.
 
-## Before you begin
-
-➡️ Make sure you’ve set up a local dev environment and AWS from part 1.
+> Before you begin: ➡️ Make sure you’ve set up a local dev environment and AWS from [part 1](/posts/2018-02-07-build-an-infinitely-scalable-slack-app-in-5-minutes).
 
 ## Set up HTML routes
 
@@ -29,7 +27,7 @@ HTML content is super easy to serve with Lambda and API Gateway. However, per-ro
 
 Fortunately, [Architect](https://arc.codes/) conveniently allows you to share code between Lambdas with a magic folder named `shared` that gets copied into all Lambdas with every deployment. It’s perfect for simple HTML view code and other shared bits.
 
-So let’s wire that up! In your terminal, set up the `shared` directory and add a file for the layout. In your terminal:
+1. So let’s wire that up! In your terminal, set up the `shared` directory and add a file for the layout. In your terminal:
 
 ```bash
 mkdir src/shared
@@ -37,7 +35,7 @@ mkdir src/shared/views
 touch src/shared/views/bootstrap.js
 ```
 
-And edit `src/shared/views/bootstrap.js` to read like this:
+2. And edit `src/shared/views/bootstrap.js` to read like this:
 
 ```js
 module.exports = function bootstrap(params) {
@@ -71,9 +69,9 @@ module.exports = function bootstrap(params) {
 
 [View source](https://gist.github.com/brianleroux/4b6dcc75e6bebcb9a3c4a25a3a682c65) - (Thanks, Bootstrap!)
 
-This is rudimentary boilerplate, of course, so eventually you may want to kick the Bootstrap dependency but this will get you going quickly and cleanly. (The recently released v4 is a lot friendlier on mobile too.)
+> This is rudimentary boilerplate, of course, so eventually you may want to kick the Bootstrap dependency but this will get you going quickly and cleanly. (The recently released v4 is a lot friendlier on mobile too.)
 
-Edit `src/html/get-index/index.js` and `src/html/get-install/index.js` Lambdas with code like the following example:
+3. Edit `src/html/get-index/index.js` and `src/html/get-install/index.js` Lambdas with code like the following example:
 
 ```js
 const arc = require('@architect/functions')
@@ -98,9 +96,9 @@ exports.handler = arc.html.get(route)
 ```
 [View source](https://gist.github.com/brianleroux/4b6dcc75e6bebcb9a3c4a25a3a682c65) - Even the crustiest old web developer has to admire those new JS template strings!
 
-Run `npm run deploy` and reload the page to see your work. The Bootstrap layout gets loaded from `@architect/shared/views/bootstrap.js `which gets refreshed every deploy.
+4. Run `npm run deploy` and reload the page to see your work. The Bootstrap layout gets loaded from `@architect/shared/views/bootstrap.js `which gets refreshed every deploy.
 
-Now, take a moment for yourself, and savor the fact that it took you only a few seconds to complete a zero-downtime deployment of a theoretically infinitely scalable app.
+5. Now, take a moment for yourself, and savor the fact that it took you only a few seconds to complete a zero-downtime deployment of a theoretically infinitely scalable app.
 
 The future is amazing.
 
@@ -289,15 +287,15 @@ If that fails the code will jump to the error handled on line 25. If that succee
 
 Execution then flows to the named `done` function. If the write fails we will see the error in the response. Otherwise, the function then redirects home with a query param `/installed?=1`. Good times!
 
-> ⚠️ If you find Node style callbacks (errbacks) hard on the eyes, it’s important to understand that Lambda does not yet support a NodeJS runtime with native async and await.
+- ⚠️ If you find Node style callbacks (errbacks) hard on the eyes, it’s important to understand that Lambda does not yet support a NodeJS runtime with native async and await.
 
-> A Promise chain could work here too but this does not enjoy very good symmetry with the NodeJS runtime API or the aws-sdk. It is also possible to transpile to get these syntax affordances but this incurs a performance cost in terms of both payload size and runtime heap.
+- A Promise chain could work here too but this does not enjoy very good symmetry with the NodeJS runtime API or the aws-sdk. It is also possible to transpile to get these syntax affordances but this incurs a performance cost in terms of both payload size and runtime heap.
 
-> Remember: Lambdas are very resource constrained and their container coldstarts are related to payload size. (Another issue with transpiled code is ongoing toolchain maintenance and debugging of the generated output.)
+- Remember: Lambdas are very resource constrained and their container coldstarts are related to payload size. (Another issue with transpiled code is ongoing toolchain maintenance and debugging of the generated output.)
 
-> In this author’s view, trading new syntax (but not capability) for a performance hit, opacity to debugging, and more surface exposed to security risks is a poor choice.
+- In this author’s view, trading new syntax (but not capability) for a performance hit, opacity to debugging, and more surface exposed to security risks is a poor choice.
 
-> You can solve this problem with patience: Node 8 will come to Lambda! Programming is hard enough even without making performance, security and reliability even harder. Choose wisely.
+- You can solve this problem with patience: Node 8 will come to Lambda! Programming is hard enough even without making performance, security and reliability even harder. Choose wisely.
 
 Deploy everything by running `npm run deploy` and check out your changes in a browser.
 

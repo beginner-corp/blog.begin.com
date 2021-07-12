@@ -13,7 +13,7 @@ published: 'February 07, 2018'
 ![arc64](post-assets/arc64.png)
 <small>Image courtesy gas2</small>
 
-Everyone’s favorite work messaging app — Slack — offers a powerful, open platform for developing rich applications in an increasingly important venue: where teams work and communicate together online. (This is why we started Begin!)
+## Everyone’s favorite work messaging app — Slack — offers a powerful, open platform for developing rich applications in an increasingly important venue: where teams work and communicate together online. (This is why we started Begin!)
 
 Amazon Web Services pioneered the relatively new concept — serverless application infrastructure — with their cloud functions product AWS Lambda.
 
@@ -23,7 +23,7 @@ Ready to start delivering applications directly into the hub of the enterprise, 
 
 Let’s hit it!
 
-> This series of posts will walk through building for Slack with [Architect](https://arc.codes/), a framework for provisioning and managing serverless infrastructure we built for [Begin](https://begin.com/).
+This series of posts will walk through building for Slack with [Architect](https://arc.codes/), a framework for provisioning and managing serverless infrastructure we built for [Begin](https://begin.com/).
 
 1. [Stand up your infra and configure a new Slack app](https://medium.com/p/972789924f3f) (this post!)
 2. Installing Slack apps with **Add to Slack** (coming soon!)
