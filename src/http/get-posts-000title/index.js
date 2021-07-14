@@ -91,7 +91,10 @@ exports.handler = async function http (req) {
       'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0',
       'content-type': 'text/html; charset=utf8'
     },
-    body: Html({children: postsLayout({category, description, title, image: arc.static(image), avi: arc.static(avi), author, published, children})
+    body: Html({children: postsLayout({category, description, title, image: arc.static(image), avi: arc.static(avi), author, published, children}),
+    scripts: [
+      '/index.js',
+    ],
     }),
     
   }

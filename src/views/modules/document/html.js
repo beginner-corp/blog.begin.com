@@ -7,7 +7,7 @@ import State from './state.js'
 // // import Sidebar from '../components/sidebar.js'
 // import GithubLink from '../components/github-link.js'
 // import SlackLink from '../components/slack-link.js'
-// import BlogCard from '../components/blog-card.js'
+
 
 
 export default function HTML (props = {}) {

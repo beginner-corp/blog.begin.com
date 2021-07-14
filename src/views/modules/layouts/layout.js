@@ -10,7 +10,9 @@ export default function layout (props = {}) {
   let image = props.image || ""
     return `
     <div
-    class=""
+    class="
+    h-full-lg
+    "
   >
     <header
       class="

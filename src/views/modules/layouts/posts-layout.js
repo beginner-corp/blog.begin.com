@@ -12,7 +12,7 @@ export default function postsLayout (props = {}) {
     return `
     <div
     class="
-      
+    h-full-lg
     "
   >
     <header

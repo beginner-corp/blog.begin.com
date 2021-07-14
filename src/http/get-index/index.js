@@ -147,7 +147,10 @@ exports.handler = async function index(req) {
        
         ${blogCard}
       `
-      })
+      }),
+      scripts: [
+        '/index.js',
+      ],
     })
   }
 }
