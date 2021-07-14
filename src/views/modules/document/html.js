@@ -36,6 +36,7 @@ ${Symbols}
   class="
     h-full
     font-face
+    overflow-hidden
   "
 >
   ${children}

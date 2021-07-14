@@ -104,12 +104,11 @@ export default function postsLayout (props = {}) {
           </div>
         </div>
         ${children}
-    
       </div>
-    </main>
-    <footer class="bg-p5 text-g0 text-center p-1">
+      <footer class="text-p5 text-center p1 ">
       <p>© 2021 Beginner Corp | Made with 💖 in San Francisco</p>
-    </footer>
+      </footer>
+    </main>
   </div>
     `
   }

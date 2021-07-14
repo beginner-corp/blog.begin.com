@@ -94,14 +94,14 @@ export default function layout (props = {}) {
         ${children}
         
       </div>
-    </main>
+   
     <footer
       class="
         pt3
         pb5
         pt5-lg
         pb5-lg
-        bg-p5
+   
         text-g0
       "
     >
@@ -200,7 +200,7 @@ export default function layout (props = {}) {
                 <a
                   class="
                     text0
-                    text-g0
+                    text-p5
                     no-underline
                     underline-hover
                   "
@@ -218,7 +218,7 @@ export default function layout (props = {}) {
                 <a
                   class="
                     text0
-                    text-g0
+                    text-p5
                     no-underline
                     underline-hover
                   "
@@ -236,7 +236,7 @@ export default function layout (props = {}) {
                 <a
                   class="
                     text0
-                    text-g0
+                    text-p5
                     no-underline
                     underline-hover
                   "
@@ -278,7 +278,7 @@ export default function layout (props = {}) {
                 <a
                   class="
                     text0
-                    text-g0
+                    text-p5
                     no-underline
                     underline-hover
                   "
@@ -296,7 +296,7 @@ export default function layout (props = {}) {
                 <a
                   class="
                     text0
-                    text-g0
+                    text-p5
                     no-underline
                     underline-hover
                   "
@@ -314,7 +314,7 @@ export default function layout (props = {}) {
                 <a
                   class="
                     text0
-                    text-g0
+                    text-p5
                     no-underline
                     underline-hover
                   "
@@ -357,7 +357,7 @@ export default function layout (props = {}) {
                 <a
                   class="
                     text0
-                    text-g0
+                    text-p5
                     no-underline
                     underline-hover
                   "
@@ -375,7 +375,7 @@ export default function layout (props = {}) {
                 <a
                   class="
                     text0
-                    text-g0
+                    text-p5
                     no-underline
                     underline-hover
                   "
@@ -395,10 +395,11 @@ export default function layout (props = {}) {
         <p
           class="
             ml4
+            text-p5
           "
         >
           © 2021 Beginner Corp | 
-          <begin-made-with>
+          <begin-made-with class="text-p5">
             Made with <span slot=emoji class="emoji">💖 </span> in <span slot=place class="place">San Francisco</span>
           </begin-made-with>
         </p>
@@ -406,7 +407,7 @@ export default function layout (props = {}) {
       </div>
 
     </footer>
-    
+    </main>
   </div>
     `
   }
