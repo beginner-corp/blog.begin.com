@@ -91,6 +91,8 @@ module.exports = {
     img: [
       'mt-1',
       'mb-1',
+      'pb1',
+      'pt1',
       'container1',
       'block',
       'm-auto'

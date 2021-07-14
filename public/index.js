@@ -1,8 +1,7 @@
-
 (function(){
   
-        let main = document
-        .getElementById('main')
+    let main = document
+    .getElementById('main')
         
     // Show percentage of page read on desktop
     let bar = document.querySelector('.indicator')
@@ -27,33 +26,39 @@
       let scrollHeight = 'scrollHeight'
       let currentTop = el[scrollTop] || body[scrollTop]
       let currentHeight = (el[scrollHeight] || body[scrollHeight]) - body.clientHeight
-      console.log(body)
       return Math.floor((currentTop / currentHeight) * 100)
     }
 
 
-    const copyButton = document.getElementById('copy-button')
-    copyButton.onclick = copyTextHandler
-   
-    const codeBlock = document.getElementById('code');
-    const copySuccess = document.getElementById('copy-success');
+    // Copy-Paste function for code blocks
+    document.addEventListener('DOMContentLoaded', () => {
+      // hljs.initHighlightingOnLoad();
+      
+      const codeBlock = document.getElementById('code');
+      const copyButton = document.getElementById('copy-button');
+      const copySuccess = document.getElementById('copy-success');
+      console.log(codeBlock)
+      console.log(copyButton)
+      console.log(copySuccess)
     
-  
-    const copyTextHandler = () => {
-      const text = codeBlock.innerText;
-  
-      navigator.clipboard.writeText(text).then(
-        () => {
-          copySuccess.classList.add('show-message');
-          setTimeout(() => {
-            copySuccess.classList.remove('show-message');
-          }, 2500);
-        },
-        () => {
-          console.log('Error writing to the clipboard');
-        }
-      );
-    };
+      const copyTextHandler = () => {
+        const text = codeBlock.innerText;
     
-    copyButton.addEventListener('click', copyTextHandler);
+        //   second version - Clipboard API
+        navigator.clipboard.writeText(text).then(
+          () => {
+            copySuccess.classList.add('show-message');
+            setTimeout(() => {
+              copySuccess.classList.remove('show-message');
+            }, 2500);
+          },
+          () => {
+            console.log('Error writing to the clipboard');
+          }
+        );
+      };
+    
+      copyButton.addEventListener('click', copyTextHandler);
+    });
+    
  }())
