@@ -25,7 +25,7 @@ module.exports = function (hljs, escapeHtml, str, lang) {
     }
   }
 
-  return `<pre class="hljs radius1 pb1 pt1 mb3 mt3"><div class="flex justify-end"><button id="copy-button"
+  return `<pre id="code" class="hljs radius1 pb1 pt1 mb3 mt3"><div class="flex justify-end"><button id="copy-button"
   class="
     pt-4
     pr1
