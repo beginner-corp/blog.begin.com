@@ -53,7 +53,8 @@ module.exports = {
     a: [
       'font-medium',
       'text-p3',
-      'text-h2'
+      'text-h2',
+      'no-underline'
     ],
     strong: [
       'font-semibold',

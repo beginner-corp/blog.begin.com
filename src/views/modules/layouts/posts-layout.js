@@ -74,8 +74,7 @@ export default function postsLayout (props = {}) {
       class="
         h-full
         p3
-        overflow-auto
-        
+        overflow-auto-lg
       "
     >
       <div
