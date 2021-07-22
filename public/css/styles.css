@@ -10,6 +10,8 @@
     --p6:#ffc245;/* butterscotch */
     --p7:#ff455a;/* watermelon */
     --p8:#fff6e3;/* lite-butterscotch */
+    --p9:#0094ff;/* azure */
+    --p10:#002d4d;/* navy */
     --g0:#FBFBFB;/* #FBFBFB */
     --g1:#E5E5E5;/* #E5E5E5 */
     --g2:#CFCFCF;/* #CFCFCF */
@@ -29,6 +31,7 @@
     --a0:#A4A4A4;/* #A4A4A4 */
     --a1:#8E8E8E;/* #8E8E8E */
     --a2:#1D5266;/* #8E8E8E */
+    --a3:#001F36;/* dark-navy */
     --d0:#797979;/* #797979 */
     --d1:#636363;/* #636363 */
   }
@@ -76,6 +79,7 @@
   .text-p5{color:var(--p5);}/* Royal purple */
   .text-p6{color:var(--p6);}/* #ffc245 */
   .text-p7{color:var(--p7);}/* #ff455a */
+  .text-p8{color:var(--p9);}/* #0094ff */
   .text-g0{color:var(--g0);}/* #FBFBFB */
   .text-g1{color:var(--g1);}/* #E5E5E5 */
   .text-g2{color:var(--g2);}/* #CFCFCF */
@@ -135,6 +139,8 @@
   .bg-p5{background-color:var(--p5);}
   .bg-p6{background-color:var(--p6);}
   .bg-p8{background-color:var(--p8);}
+  .bg-p10{background-color:var(--p10);}
+  .bg-p10{background-color:var(--p9);}
   .bg-g0{background-color:var(--g0);}
   .bg-g1{background-color:var(--g1);}
   .bg-g2{background-color:var(--g2);}
@@ -159,6 +165,7 @@
   .bg-a1.active{background-color:var(--a1);}
   .bg-a2:active{background-color:var(--a2);}
   .bg-a2.active{background-color:var(--a2);}
+  .bg-a3.active{background-color:var(--a3);}
   .bg-d0:disabled{background-color:var(--d0);}
   .bg-d1:disabled{background-color:var(--d1);}
   
