@@ -4,9 +4,9 @@ import Icon from '../components/icon.js'
 
 export default function layout (props = {}) {
 
-
   let children = props.children || ""
   let image = props.image || ""
+
     return `
     <div
     class="
@@ -46,7 +46,7 @@ export default function layout (props = {}) {
         ${Logo({ classes: 'logo' })}
       </a>
    
-  <nav class="hidden flex-lg items-center justify-between w-full pr-4 pl-4" style="
+  <nav id="nav-ul" class="hidden flex-lg items-center justify-between w-full pr-4 pl-4" style="
   top:2.8rem;
   right:0;
   left:0;
@@ -99,13 +99,14 @@ export default function layout (props = {}) {
   >
     <button
       aria-label="Menu"
+      id="hamburger"
       class="
         ml0
         bg-unset
         text-g0
         text-h0
         text-a2
-      
+
         cursor-pointer
       "
     >

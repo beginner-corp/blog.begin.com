@@ -29,6 +29,13 @@
       return Math.floor((currentTop / currentHeight) * 100)
     }
 
+    // Hamburger Menu
+    const hamburger = document.getElementById('hamburger');
+    const navUL = document.getElementById('nav-ul');
+  
+    hamburger.addEventListener('click', () => {
+      navUL.classList.toggle('show');
+    })
 
     // Copy-Paste function for code blocks
     document.addEventListener('DOMContentLoaded', () => {
