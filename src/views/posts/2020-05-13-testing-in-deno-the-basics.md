@@ -129,7 +129,7 @@ Join us tomorrow for part 2: **Setting up CI/CD for Deno with Begin**
 - Ready to make your first Deno app on AWS? Deploy a simple Deno `Hello World!` to Begin in 15 seconds. No credit card required!
 
 
-<a href="https://begin.com/apps/create?template=https://github.com/pchinjr/fcc-serverless-api"><img class="block m-auto mt3 mb3" src="https://res.cloudinary.com/practicaldev/image/fetch/s--yYw27_-V--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://static.begin.com/deploy-to-begin.svg" alt="Deploy to Begin" loading="lazy"></a>
+<a href="https://begin.com/apps/create?template=https://github.com/begin-examples/deno-hello-world"><img class="block m-auto mt3 mb3" src="/_static/deploy-to-begin.png" alt="Deploy to Begin" style="height: 60px;" loading="lazy"></a>
 
 - [Try out another Begin tutorial, like a full CRUD app with Begin Data!](https://docs.begin.com/en/guides/crud-app)
 - 🌟 Check out (and star!) Begin’s open core [OpenJS Architect](https://github.com/architect/architect) on GitHub
