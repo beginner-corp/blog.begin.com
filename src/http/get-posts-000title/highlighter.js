@@ -2,11 +2,11 @@
 module.exports = function (hljs, escapeHtml, str, lang) {
   if (lang && hljs.getLanguage(lang)) {
     try {
-      return `<pre class="hljs radius1 pb1 pt1 mb3 mt3 flex"><div class="hidden">${Buffer.from(str).toString("base64")}</div><button
+      return `<pre class="hljs radius1 pb1 pt1 mb3 mt3"><div class="hidden">${Buffer.from(str).toString("base64")}</div><button
       class="
         copy-button
-        flex 
-        
+        block 
+        ml-auto
         pt-1
         pr1
         pb-1
@@ -28,10 +28,11 @@ module.exports = function (hljs, escapeHtml, str, lang) {
     }
   }
 
-  return `<pre class="hljs radius1 pb1 pt1 mb3 mt3"><div class="relative"><button
+  return `<pre class="hljs radius1 pb1 pt1 mb3 mt3"><div class="hidden">${Buffer.from(str).toString("base64")}</div><button
   class="
     copy-button
-    absolute
+    block 
+    ml-auto
     pt-4
     pr1
     pb-4
@@ -46,5 +47,5 @@ module.exports = function (hljs, escapeHtml, str, lang) {
     text-h1
     font-semibold
     cursor-pointer
-  ">Copy</button><div class="hidden">${Buffer.from(str).toString("base64")}</div></span>${escapeHtml(str)}</pre></div>`
+  ">Copy</button></span>${escapeHtml(str)}</pre>`
 }
