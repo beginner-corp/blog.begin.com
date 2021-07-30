@@ -38,30 +38,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Copy-Paste function for code blocks
    
-      
-      // const code = document.getElementById('code');
       const copyButton = document.querySelectorAll('.copy-button');
-      const copySuccess = document.querySelectorAll('.copy-success');
-
-      
-      console.log(copyButton)
-      console.log(copySuccess)
 
       for (let e of copyButton) {
-        console.log(e)
-        e.style.display = "block"
+        
         e.addEventListener('click', (evt) => {
           let parent = evt.target.parentElement
           let code = parent.querySelector("div.hidden").textContent
-          let success = parent.querySelector(".copy-success")
-          success.style.display = "block"
-          console.log(atob(code))
+          let buttonText = parent.querySelector('.copy-button').innerText = "Copied!";
+         
           navigator.clipboard.writeText(atob(code)).then(
             () => {
-              copySuccess
-              // setTimeout(() => {
-              //   copySuccess
-              // }, 2500);
+            setTimeout(() => {
+              parent.querySelector('.copy-button').innerText = "Copy";
+            }, 2000);
             },
             () => {
               console.log('Error writing to the clipboard');
@@ -71,26 +61,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
 
-
-      // console.log(code)
-    
-    //   const copyTextHandler = () => {
-    //     const text = codeBlock.innerText;
-    
-    //     //   second version - Clipboard API
-    //     navigator.clipboard.writeText(text).then(
-    //       () => {
-    //         copySuccess.classList.add('show-message');
-    //         setTimeout(() => {
-    //           copySuccess.classList.remove('show-message');
-    //         }, 2500);
-    //       },
-    //       () => {
-    //         console.log('Error writing to the clipboard');
-    //       }
-    //     );
-    //   };
-    
-    //   copyButton.addEventListener('click', copyTextHandler);
-    // }
     
