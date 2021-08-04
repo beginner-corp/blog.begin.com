@@ -17,7 +17,7 @@ published: 'February 11, 2020'
 
 Hit this button to deploy a `Hello World!` app that uses Architect’s new Express migration middleware; it’ll take about 15 seconds:
 
-<a href="https://begin.com/apps/create?template=https://github.com/brianleroux/arc-example-express"><img class="block m-auto mt3 mb3" src="/_static/deploy-to-begin.png" alt="Deploy to Begin" style="height: 60px;" loading="lazy"></a>
+[![deploy-to-begin](deploy-to-begin.png)](https://begin.com/apps/create?template=https://github.com/brianleroux/arc-example-express)
 
 Or follow these steps to try it yourself from scratch! Node.js is required, but an AWS account is not.
 
@@ -55,7 +55,7 @@ exports.handler = arc.http.express(app)
 
 Pretty neat, right? If you didn’t do it already, try it for yourself in 15 seconds: click the button below to deploy a Hello World! app that uses Architect’s new Express migration middleware:
 
-<a href="https://begin.com/apps/create?template=https://github.com/brianleroux/arc-example-express"><img class="block m-auto mt3 mb3" src="/_static/deploy-to-begin.png" alt="Deploy to Begin" style="height: 60px;" loading="lazy"></a>
+[![deploy-to-begin](deploy-to-begin.png)](https://begin.com/apps/create?template=https://github.com/brianleroux/arc-example-express)
 
 - [Try out another Begin tutorial, like a full CRUD app with Begin Data!](https://docs.begin.com/en/guides/crud-app)
 - 🌟 Check out (and star!) Begin’s open core [OpenJS Architect](https://github.com/architect/architect) on GitHub

@@ -58,6 +58,6 @@ Finally, only after you’ve migrated any dependent systems, your team has moved
 
 - Want to try out a fresh new personal website (and make it run on `main`)? Start one on Begin in 30 seconds (no credit card required):
 
-<a href="https://begin.com/apps/create?template=https://github.com/begin-examples/node-personal-website"><img class="block m-auto mt3 mb3" src="/_static/deploy-to-begin.png" alt="Deploy to Begin" style="height: 60px;" loading="lazy"></a>
+[![deploy-to-begin](deploy-to-begin.png)](https://begin.com/apps/create?template=https://github.com/begin-examples/node-personal-website)
 
 - 🌟 Check out (and star!) Begin’s open core [OpenJS Architect](https://github.com/architect/architect) on GitHub

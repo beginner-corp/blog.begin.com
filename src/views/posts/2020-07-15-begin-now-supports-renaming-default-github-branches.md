@@ -29,7 +29,7 @@ For example, you can now rename `master` branch to `main` and Begin will continu
 
 - Deploy a new Personal Website to Begin in 30 seconds (no credit card required):
 
-<a href="https://begin.com/apps/create?template=https://github.com/begin-examples/node-personal-website"><img class="block m-auto mt3 mb3" src="/_static/deploy-to-begin.png" alt="Deploy to Begin" style="height: 60px;" loading="lazy"></a>
+[![deploy-to-begin](deploy-to-begin.png)](https://begin.com/apps/create?template=https://github.com/begin-examples/node-personal-website)
 
 - [Try out another Begin tutorial, like a full CRUD app with Begin Data!](https://docs.begin.com/en/guides/crud-app)
 - 🌟 Check out (and star!) Begin’s open core [OpenJS Architect](https://github.com/architect/architect) on GitHub

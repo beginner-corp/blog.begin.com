@@ -21,7 +21,7 @@ Our goal at Begin is to make you — and your apps — massively faster. A key i
 
 Hit this button to deploy a new CRUD app to Begin in 15 seconds. From there you’ll be able to add to its three existing routes:
 
-<a href="https://begin.com/apps/create?template=https://github.com/begin-examples/node-crud"><img class="block m-auto mt3 mb3" src="/_static/deploy-to-begin.png" alt="Deploy to Begin" style="height: 60px;" loading="lazy"></a>
+[![deploy-to-begin](deploy-to-begin.png)](https://begin.com/apps/create?template=https://github.com/begin-examples/node-crud)
 
 ## How it works
 
@@ -64,7 +64,8 @@ Your new route(s) will instantly activate in `staging`. Then deploy to `producti
 
 - Deploy an AVA example app to Begin in 15 seconds:
 
-<a href="https://begin.com/apps/create?template=https://github.com/begin-examples/node-crud"><img class="block m-auto mt3 mb3" src="/_static/deploy-to-begin.png" alt="Deploy to Begin" style="height: 60px;" loading="lazy"></a>
+[![deploy-to-begin](deploy-to-begin.png)](https://begin.com/apps/create?template=https://github.com/begin-examples/node-crud)
+
 
 - [Try out another Begin tutorial, like a full CRUD app with Begin Data!](https://docs.begin.com/en/guides/crud-app)
 - 🌟 Check out (and star!) Begin’s open core [OpenJS Architect](https://github.com/architect/architect) on GitHub

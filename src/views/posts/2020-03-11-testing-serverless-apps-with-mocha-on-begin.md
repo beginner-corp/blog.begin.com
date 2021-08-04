@@ -21,7 +21,8 @@ In this post we’ll demonstrate the basics of testing with Mocha on a serverles
 
 Hit this button to deploy a new Node.js + Mocha example app to Begin in 15 seconds:
 
-<a href="https://begin.com/apps/create?template=https://github.com/begin-examples/learn-node-mocha"><img class="block m-auto mt3 mb3" src="/_static/deploy-to-begin.png" alt="Deploy to Begin" style="height: 60px;" loading="lazy"></a>
+[![deploy-to-begin](deploy-to-begin.png)](https://begin.com/apps/create?template=https://github.com/begin-examples/learn-node-mocha)
+
 
 ## Testing the libraries
 
@@ -96,7 +97,7 @@ It’s finally time to see your beautiful app in production. Pushing code to Git
 
 - Deploy an AVA example app to Begin in 15 seconds:
 
-<a href="https://begin.com/apps/create?template=https://github.com/begin-examples/learn-node-mocha"><img class="block m-auto mt3 mb3" src="/_static/deploy-to-begin.png" alt="Deploy to Begin" style="height: 60px;" loading="lazy"></a>
+[![deploy-to-begin](deploy-to-begin.png)](https://begin.com/apps/create?template=https://github.com/begin-examples/learn-node-mocha)
 
 - [Try out another Begin tutorial, like a full CRUD app with Begin Data!](https://docs.begin.com/en/guides/crud-app)
 - 🌟 Check out (and star!) Begin’s open core [OpenJS Architect](https://github.com/architect/architect) on GitHub

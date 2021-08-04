@@ -25,7 +25,7 @@ Today we’re introducing **an entirely new primitive to Begin apps: event funct
 
 Hit this button to deploy an event functions example app to Begin in 30 seconds:
 
-<a href="https://begin.com/apps/create?template=https://github.com/begin-examples/node-events/"><img class="block m-auto mt3 mb3" src="/_static/deploy-to-begin.png" alt="Deploy to Begin" style="height: 60px;" loading="lazy"></a>
+[![deploy-to-begin](deploy-to-begin.png)](https://begin.com/apps/create?template=https://github.com/begin-examples/node-events/)
 
 ## Event functions: what are they, and how do they work?
 
@@ -95,7 +95,7 @@ Our goal at Begin is to unlock the full power of modern application architecture
 
 - Deploy an example app with Begin events in 15 seconds (no credit card required):
 
-<a href="https://begin.com/apps/create?template=https://github.com/begin-examples/node-events/"><img class="block m-auto mt3 mb3" src="/_static/deploy-to-begin.png" alt="Deploy to Begin" style="height: 60px;" loading="lazy"></a>
+[![deploy-to-begin](deploy-to-begin.png)](https://begin.com/apps/create?template=https://github.com/begin-examples/node-events/)
 
 - [Try out another Begin tutorial, like a full CRUD app with Begin Data!](https://docs.begin.com/en/guides/crud-app)
 - 🌟 Check out (and star!) Begin’s open core [OpenJS Architect](https://github.com/architect/architect) on GitHub
