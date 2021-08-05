@@ -29,12 +29,14 @@ export default function HTML (props = {}) {
 
   return `
 <!DOCTYPE html>
-<html lang="${lang}" class="">
+<html lang="${lang}" class="h-full overflow-hidden">
 ${Head(props)}
 ${Symbols}
 <body
   class="
     font-face
+    h-full
+    overflow-hidden
   "
 >
   ${children}

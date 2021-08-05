@@ -10,7 +10,7 @@ export default function layout (props = {}) {
     return `
     <div
     class="
-    h-full-lg
+    h-full
     "
   >
     <header
@@ -46,7 +46,17 @@ export default function layout (props = {}) {
         ${Logo({ classes: 'logo' })}
       </a>
    
-  <nav id="nav-ul" class="hidden flex-lg items-center justify-between w-full pr-4 pl-4" style="
+  <nav id="nav-ul" class="
+  hidden 
+  flex-lg 
+  items-center 
+  justify-between 
+  w-full 
+  pr-4 
+  pl-4 
+  
+  " 
+  style="
   top:2.8rem;
   right:0;
   left:0;
