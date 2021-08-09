@@ -142,7 +142,7 @@ export default function layout (props = {}) {
   </div>
       
   <div class="indicator bg-image0 absolute right0 bottom0 left0"></div>
-    </header>
+</header>
     
     <main
       id="main"
