@@ -50,17 +50,17 @@ export default function layout (props = {}) {
   <nav id="nav-ul" class="
   hidden 
   flex-lg 
-  items-center 
+  items-center-lg
   justify-between 
   w-full 
   pt-1
   pb-1
-  pl4
   pt-none-lg
   pb-none-lg
   pl-none-lg
-  pr-4 
-  pl-4 
+  pr-none-lg
+  pr-3 
+  pl-3 
   bg-p5
   max-h-full-lg
   h-0-lg
@@ -68,6 +68,8 @@ export default function layout (props = {}) {
   absolute
   menu-transition
   z1
+  flex-col 
+  flex-row-lg
   " 
   style="
   top:2.8rem;
@@ -87,8 +89,8 @@ export default function layout (props = {}) {
       
       <a class="flex uppercase items-center font-medium leading5 text-p8 radius-pill text-h0 pl-1 pr0 mb-2 mb-none-lg mr1-lg bg-a3 no-underline" alt="https://begin.com/support" href="https://begin.com/support"><div class="mr-2 f-p26" style="width:0.888rem;height:0.777rem;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14"><path fill="#0094FF" fill-rule="evenodd" d="M12.462 0C14.413 0 16 1.504 16 3.354v3.792c0 1.85-1.587 3.354-3.538 3.354H9.317l-3.702 3.3a.852.852 0 01-.538.2.821.821 0 01-.298-.055.735.735 0 01-.471-.674V10.5h-.77C1.587 10.5 0 8.996 0 7.146V3.354C0 1.504 1.587 0 3.538 0h8.924zm2 7.146V3.354c0-1.048-.895-1.896-2-1.896H3.538c-1.105 0-2 .848-2 1.896v3.792c0 1.048.895 1.896 2 1.896h2.308v2.606l2.856-2.606h3.76c1.105 0 2-.848 2-1.896z"/></svg></div><span>Support</span></a>
     </span>
-    <span class="flex-lg mb0 mb-none-lg flex-col flex-row-lg">
-      <a href="https://begin.com/login" class="flex
+    <span class=" mb0 mb-none-lg ">
+      <a href="https://begin.com/login" class="
       pt-4
       pr-1
       pb-4
@@ -131,7 +133,7 @@ export default function layout (props = {}) {
         text-g0
         text-h0
         text-a2
-
+        
         cursor-pointer
       "
     >

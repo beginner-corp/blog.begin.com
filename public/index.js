@@ -37,28 +37,27 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     // Copy-Paste function for code blocks
-   
-      const copyButton = document.querySelectorAll('.copy-button');
+    const copyButton = document.querySelectorAll('.copy-button');
 
-      for (let e of copyButton) {
-        
-        e.addEventListener('click', (evt) => {
-          let parent = evt.target.parentElement
-          let code = parent.querySelector("div.hidden").textContent
-          let buttonText = parent.querySelector('.copy-button').innerText = "Copied!";
-         
-          navigator.clipboard.writeText(atob(code)).then(
-            () => {
-            setTimeout(() => {
-              parent.querySelector('.copy-button').innerText = "Copy";
-            }, 2000);
-            },
-            () => {
-              console.log('Error writing to the clipboard');
-            }
-          );
-        })
-      }
+    for (let e of copyButton) {
+    
+    e.addEventListener('click', (evt) => {
+      let parent = evt.target.parentElement
+      let code = parent.querySelector("div.hidden").textContent
+      let buttonText = parent.querySelector('.copy-button').innerText = "Copied!";
+      
+      navigator.clipboard.writeText(atob(code)).then(
+        () => {
+        setTimeout(() => {
+          parent.querySelector('.copy-button').innerText = "Copy";
+        }, 2000);
+        },
+        () => {
+          console.log('Error writing to the clipboard');
+        }
+      );
     })
+  }
+})
 
     
