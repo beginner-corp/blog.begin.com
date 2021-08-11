@@ -11,9 +11,7 @@
 Much of the layout for this blog was taken from the [Architect docs](https://arc.codes/docs/en/guides/get-started/quickstart) while the styling was taken from the [Begin docs](https://docs.begin.com/).
 
 - CSS Utility classes can be found in `/public/css/styles.css`
-
 - Custom styling can be found in `/public/css/index.css`
-
 - Syntax highlighting styles can be found in `/public/css/syntax.css`
 
 ## Posts
@@ -31,6 +29,6 @@ Much of the layout for this blog was taken from the [Architect docs](https://arc
 Getting rid of posts in URL
 
 - Move get post handler logic into get-catchall logic
-- `Get post` index handler should be renamed to post middleware
+- Get post index handler should be renamed to post middleware
 - `Get catchall`: Run post middleware after redirects
 - 

@@ -61,7 +61,7 @@ let redirects = {
   
   // eslint-disable-next-line
   module.exports = async function redirect (req) {
-    console.log(redirects)
+    
     let isGet = req.requestContext.http.method.toLowerCase() === 'get'
     let isPath = Object.keys(redirects).includes(req.requestContext.http.path)
     if (isGet && isPath) {
@@ -75,4 +75,4 @@ let redirects = {
     }
   }
 
-  // if isget is true and ispath is tru then we redirect to path of redirects
+  // if isget is true and ispath is true then we redirect to path of redirects

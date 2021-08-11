@@ -28,7 +28,7 @@ const cache = {} // cheap warm cache
 const arc = require('@architect/functions')
 
 
-exports.handler = async function http (req) {
+module.exports = async function render (req) {
 
   let docName = req.pathParameters.title
  
