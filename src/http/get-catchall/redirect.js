@@ -33,7 +33,6 @@ let redirects = {
   '/how-to-create-an-openjs-architect-serverless-app-with-babel-dfe7f3554076': '/2019-10-29-how-to-create-an-openjs-architect-serverless-app-with-babel',
   '//how-to-create-a-bundler-free-openjs-architect-serverless-app-with-babel-dc6907859835': '/2019-10-31-how-to-create-a-bundler-free-openjs-architect-serverless-app-with-babel',
   '/how-to-create-an-openjs-architect-serverless-app-with-typescript-d8549102f73c': '/2019-10-31-how-to-create-an-openjs-architect-serverless-app-with-typescript',
-  '/deno-runtime-support-for-architect-805fcbaa82c3': '/',
 
   // 2020
   '/deno-runtime-support-for-architect-805fcbaa82c3': '/2019-12-20-deno-runtime-support-for-architect',

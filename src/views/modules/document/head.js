@@ -1,9 +1,7 @@
 export default function Head (props = {}) {
-  let { category, description, title } = props
-  let fullTitle = category && title
-    ? `${category} > ${title} - Begin blog`
-    : 'Begin blog'
-  let descriptionContent = description || 'The official Begin blog.'
+
+  let fullTitle = props.frontmatter ? props.frontmatter.title : 'Begin blog'
+  let descriptionContent = props.frontmatter ? props.frontmatter.description : 'The official Begin blog'
 
   return `
 <head>
