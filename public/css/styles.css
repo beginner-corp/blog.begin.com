@@ -759,11 +759,11 @@
   .select-auto{user-select:auto;}
 
 
-  @media only screen and (min-width:48em) {
+  @media only screen and (min-width:33em) {
 
 
   /* CONTAINER  */
-  .container-lg{max-width:48em;}
+  .container-lg{max-width:33em;}
 
 
 

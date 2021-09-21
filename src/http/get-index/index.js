@@ -6,7 +6,7 @@ const { readdirSync, readFileSync } = require('fs')
 const md = require('@architect/shared/blog/md')
 const Html = require('@architect/views/modules/document/html.js').default
 const layout = require('@architect/views/modules/layouts/layout.js').default
-const Card = require('@architect/views/modules/components/blog-card').default
+const Post = require('@architect/views/modules/components/post-item').default
 const base = path.join('node_modules', '@architect', 'views', 'posts')
 
 const posts = readdirSync(base)
@@ -17,7 +17,7 @@ function render (path) {
   return md.meta
 }
 
-function getCardData (path) {
+function getData (path) {
   const frontmatter = render(path)
   frontmatter.image = arcStatic(frontmatter.image)
   frontmatter.avatar = arcStatic(frontmatter.avatar)
@@ -28,9 +28,9 @@ function getCardData (path) {
 }
 
 const cards = posts
-  .map(path => getCardData(path))
+  .map(path => getData(path))
   .sort((a, b) => (a.post < b.post ? 1 : -1))
-  .map(o => Card(o))
+  .map(o => Post(o))
   .join('')
 
 // eslint-disable-next-line

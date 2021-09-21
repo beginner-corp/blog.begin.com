@@ -29,6 +29,10 @@ html {
   width: 1.25rem;
   height: 1.25rem;
 }
+.icon-nav {
+  width: 0.888rem;
+  height: 0.777rem;
+}
 .star-icon {
   width: 1rem;
   height: 1rem;
@@ -37,9 +41,9 @@ html {
   width: 2rem;
   height: 2rem;
 }
-.logo,
-.h-logo {
-  height: 1.5rem;
+.logo {
+  width: 4.777rem;
+  height: 1.333rem;
 }
 .left-sidebar {
   /* Hide Sidebar off screen in mobile */
@@ -120,7 +124,9 @@ html {
   transform: scale(1);
   transition: transform 0.15s cubic-bezier(.16,.7,.19,1.04);
 }
-
+.link-login {
+  max-width: 6rem;
+}
 .guide-link:hover > .h-gradient {
   background-position-x: -5.5rem;
 }
@@ -166,8 +172,4 @@ code {
 
 .menu-transition {
   transition: max-height 0.25s cubic-bezier(0.79, 0.14, 0.15, 0.86);
-}
-
-#nav-ul.show {
-  display: flex;
 }

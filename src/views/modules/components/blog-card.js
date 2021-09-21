@@ -27,7 +27,7 @@ export default function BlogCard (state = {}) {
   "
 >
   <a
-    class="no-underline-lg no-underline"
+    class="no-underline"
     href="/${href}"
   >
     <img

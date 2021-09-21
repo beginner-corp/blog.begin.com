@@ -11,7 +11,7 @@ export default function postsLayout (state = {}) {
   } = state
 
   return `
-    <div
+  <div
     class="
       h-full
     "
@@ -30,7 +30,6 @@ export default function postsLayout (state = {}) {
       bg-p5
       text-g0
     "
-    style="min-width:4.777rem;min-height:1.333rem;"
   >
   <div class="flex items-center justify-between w-full pr1 pl1">
     <a
@@ -45,7 +44,7 @@ export default function postsLayout (state = {}) {
         cursor-pointer
       "
     >
-      ${Logo({ classes: 'logo' })}
+      ${Logo()}
     </a>
 
       <nav
@@ -83,7 +82,9 @@ export default function postsLayout (state = {}) {
         "
       >
       <span class="flex-lg">
-        <a class="flex uppercase items-center font-medium leading5 text-p8 radius-pill text-h0 pl-1 pr0 mb-2 mb-none-lg mr1-lg bg-a3 no-underline" alt="https://begin.com/apps" href="https://begin.com/apps"><div class="mr-2 f-p26" style="width:0.888rem;height:0.777rem;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14"><path fill="#0094FF" fill-rule="evenodd" d="M12.26 8.215l1.207-.773L16 8.908 8 14 0 8.908l2.525-1.466 1.215.773-1.286.741L8 12.486l5.538-3.53-1.278-.74zM8 9.713L0 4.622 8 0l8 4.622-8 5.091zM2.454 4.677L8 8.207l5.538-3.53L8 1.474 2.454 4.677z"/></svg></div><span>Apps</span></a>
+        <a class="flex uppercase items-center font-medium leading5 text-p8 radius-pill text-h0 pl-1 pr0 mb-2 mb-none-lg mr1-lg bg-a3 no-underline" alt="https://begin.com/apps" href="https://begin.com/apps"><div class="mr-2 f-p26" style="width:0.888rem;height:0.777rem;">
+            ${Icon({ href: 'apps' })}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14"><path fill="#0094FF" fill-rule="evenodd" d="M12.26 8.215l1.207-.773L16 8.908 8 14 0 8.908l2.525-1.466 1.215.773-1.286.741L8 12.486l5.538-3.53-1.278-.74zM8 9.713L0 4.622 8 0l8 4.622-8 5.091zM2.454 4.677L8 8.207l5.538-3.53L8 1.474 2.454 4.677z"/></svg></div><span>Apps</span></a>
 
         <a class="flex uppercase items-center font-medium leading5 text-p8 radius-pill text-h0 pl-1 pr0 mb-2 mb-none-lg mr1-lg bg-a3 no-underline" alt="https://docs.begin.com" href="https://docs.begin.com"><div class="mr-2 f-p26" style="width:0.888rem;height:0.777rem;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14"><path fill="#0094FF" fill-rule="evenodd" d="M16 4.978l-3.338 6.163H10.16V14l-3.193-1.66L3.773 14v-2.86H2.54C.853 11.14 0 10.245 0 8.453 0 7.92.063 7.334.308 6.86 1.596 4.356 2.612 2.763 3.62 1.533 4.454.52 5.161 0 6.739 0h9.134l-4.127 6.874H2.54c-.436 0-1.089 0-1.089 1.563 0 1.519.626 1.519 1.089 1.519h1.233v-1.66h1.451v3.541l1.742-.904 1.741.904v-3.54h1.452v1.659h1.55l2.704-4.978H16zm-11.175-2.8c-.707.866-1.505 2.089-2.313 3.51h8.327l2.703-4.503H6.739c-.961 0-1.251.193-1.914.993z"/></svg></div><span>Docs</span></a>
 
@@ -130,21 +131,21 @@ export default function postsLayout (state = {}) {
       hidden-lg
     "
     >
-    <button
-      aria-label="Menu"
-      id="hamburger"
-      class="
-        pr1
-        bg-unset
-        text-g0
-        text-h0
-        text-a2
+      <button
+        aria-label="Menu"
+        id="hamburger"
+        class="
+          pr1
+          bg-unset
+          text-g0
+          text-h0
+          text-a2
 
-        cursor-pointer
-      "
-    >
-      ${Icon({ href: 'hamburger', classes: 'icon fill-current' })}
-    </button>
+          cursor-pointer
+        "
+      >
+        ${Icon({ href: 'hamburger', class: 'icon fill-current' })}
+      </button>
     </div>
 
     <div class="indicator bg-image0 absolute right0 bottom0 left0"></div>
