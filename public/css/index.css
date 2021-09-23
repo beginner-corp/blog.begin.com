@@ -78,7 +78,10 @@ html {
   resize: vertical;
 }
 
-@media only screen and (min-width:48em) {
+@media only screen and (min-width:33em) {
+  .max-h-900-lg {
+    max-height: 50rem;
+  }
   .resize-none-lg {
     resize: none;
   }

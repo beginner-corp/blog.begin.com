@@ -47,6 +47,8 @@ export default function Header () {
       class="
         js-nav
         absolute
+        static-lg
+        top0-lg
         right0
         left0
         flex-lg
@@ -55,7 +57,7 @@ export default function Header () {
         items-center-lg
         justify-between
         max-h-0
-        max-h-full-lg
+        max-h-900-lg
         w-full
         pt-none-lg
         pb-none-lg
